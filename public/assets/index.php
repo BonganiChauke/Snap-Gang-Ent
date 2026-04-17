@@ -34,7 +34,7 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                
+
                             <!-- home nav link -->
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -65,6 +65,54 @@
                 </div>
             </div>
         </nav>
+
+        <!-- HERO SECTION -->
+        <section id="hero"
+            class="hero-section position-relative d-flex align-items-center justify-content-center text-center text-white">
+
+            <!-- Background Image with Overlay -->
+            <div class="hero-bg">
+                <img src="https://via.placeholder.com/1920x1080/0f0f0f/ffffff?text=Snap+Gvng+Ent"
+                    alt="Snap Gvng Ent Background" class="img-fluid w-100 h-100 object-fit-cover">
+            </div>
+
+            <!-- Dark Overlay -->
+            <div class="hero-overlay"></div>
+
+            <div class="container position-relative z-3">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-8">
+
+                        <h1 class="display-3 display-md-2 display-lg-1 fw-bold mb-4 hero-title">
+                            SNAP GVNG ENT
+                        </h1>
+
+                        <p class="lead fs-4 fs-lg-3 mb-5 hero-subtitle">
+                            Where Talent Meets Legacy<br>
+                            <span class="text-warning">Music • Culture • Movement</span>
+                        </p>
+
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                            <a href="#artists" class="btn btn-warning btn-lg px-5 py-3 fw-semibold">
+                                Discover Artists
+                            </a>
+                            <a href="#music" class="btn btn-outline-light btn-lg px-5 py-3 fw-semibold">
+                                Listen Now
+                            </a>
+                        </div>
+
+                        <!-- Optional Scroll Indicator -->
+                        <div class="mt-5 pt-4">
+                            <a href="#about" class="text-white text-decoration-none scroll-indicator">
+                                <i class="bi bi-chevron-down fs-1"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </header>
     <main></main>
     <footer>
