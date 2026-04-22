@@ -21,7 +21,7 @@
         <nav class="navbar" role="navigation" aria-label="Main navigation">
 
             <a class="navbar-brand" href="#">
-                <span class="accent-red">Snap</span> Gvng Ent
+                <span class="accent-red">Snap</span> Gvng <span class="accent-blue">Ent</span>
             </a>
 
             <!-- Desktop nav links -->
