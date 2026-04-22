@@ -86,6 +86,10 @@ body {
     color: var(--red);
 }
 
+.navbar-brand .accent-blue {
+    color: var(--blue);
+}
+
 .nav-links {
     display: flex;
     gap: 4px;
