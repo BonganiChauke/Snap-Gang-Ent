@@ -6,3 +6,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* fonts  */
+@font-face {
+    font-family: 'Grandover';
+    src: url('fonts/Grandover.woff2') format('woff2'),
+        url('fonts/Grandover.woff') format('woff'),
+        url('fonts/Grandover.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arexa';
+    src: url('fonts/Arexa.woff2') format('woff2'),
+        url('fonts/Arexa.woff') format('woff'),
+        url('fonts/Arexa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
