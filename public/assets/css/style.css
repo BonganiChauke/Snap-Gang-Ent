@@ -27,3 +27,21 @@
     font-style: normal;
     font-display: swap;
 }
+
+/* color variables and fonts */
+:root {
+    --red: #cc0000;
+    --red-dark: #aa0000;
+    --red-soft: rgba(204, 0, 0, 0.15);
+    --red-border: rgba(204, 0, 0, 0.4);
+    --blue: #1a6bd4;
+    --blue-soft: #4d8fdc;
+    --blue-hover: rgba(26, 107, 212, 0.12);
+    --black: #0a0a0a;
+    --white: #ffffff;
+    --muted: #aaaaaa;
+    --dim: #666666;
+    --divider: rgba(255, 255, 255, 0.08);
+    --font-brand: 'Grandover', Georgia, serif;
+    --font-body: 'Arexa', Arial, sans-serif;
+}
