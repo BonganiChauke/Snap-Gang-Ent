@@ -45,3 +45,14 @@
     --font-brand: 'Grandover', Georgia, serif;
     --font-body: 'Arexa', Arial, sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--black);
+    color: var(--white);
+    overflow-x: hidden;
+}
