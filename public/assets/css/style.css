@@ -184,16 +184,6 @@ body {
     padding-top: 60px;
 }
 
-/* Subtle grid background */
-.hero-bg-grid {
-    position: absolute;
-    inset: 0;
-    background-image:
-        linear-gradient(rgba(204, 0, 0, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(204, 0, 0, 0.05) 1px, transparent 1px);
-    background-size: 60px 60px;
-    z-index: 1;
-}
 
 /* Accent lines */
 .hero-accent-top {
@@ -206,15 +196,6 @@ body {
     z-index: 2;
 }
 
-.hero-accent-left {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: linear-gradient(to bottom, var(--red), var(--blue), transparent);
-    z-index: 2;
-}
 
 /* Left-aligned hero content */
 .hero-content {
