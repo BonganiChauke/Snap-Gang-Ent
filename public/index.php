@@ -33,6 +33,10 @@
                 <li><a href="#music">Music</a></li>
             </ul>
 
+            <ul class="nav-links">
+                <a href="" class="btn-outline-blue lgn-btn">Login</a>
+            </ul>
+
             <!-- Mobile hamburger button -->
             <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav(this)">
                 <span></span>
@@ -49,6 +53,7 @@
             <a href="#contact" onclick="closeNav()">Contact us</a>
             <a href="#artists" onclick="closeNav()">Artists</a>
             <a href="#music" onclick="closeNav()">Music</a>
+            <a href="" onclick="closeNav()">Login</a>
         </div>
 
         <!-- HERO SECTION -->
