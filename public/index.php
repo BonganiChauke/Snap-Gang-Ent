@@ -82,7 +82,7 @@
                     <a href="#music" class="btn-outline-blue">Listen Now</a>
                 </div>
 
-                <div class="hero-stats">
+                <!-- <div class="hero-stats">
                     <div class="stat-item">
                         <span class="stat-value">20+</span>
                         <span class="stat-label">Artists</span>
@@ -95,7 +95,7 @@
                         <span class="stat-value">5+</span>
                         <span class="stat-label">Years</span>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
