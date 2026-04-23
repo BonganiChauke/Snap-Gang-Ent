@@ -99,10 +99,10 @@
 
             </div>
 
-            <!-- Decorative watermark letter (right side) -->
+            <!-- Decorative watermark letter (right side)
             <div class="hero-right" aria-hidden="true">
                 <span class="hero-watermark">S</span>
-            </div>
+            </div> -->
 
             <!-- Scroll indicator -->
             <div class="scroll-down" aria-hidden="true">
