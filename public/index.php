@@ -61,7 +61,8 @@
 
             <!-- Full background image -->
             <div class="hero-bg-img" aria-hidden="true">
-                <img src="../public/assets/images/adi-goldstein-sdtnZ4LgbWk-unsplash.jpg" alt="Recording studio mixing board">
+                <img src="../public/assets/images/adi-goldstein-sdtnZ4LgbWk-unsplash.jpg"
+                    alt="Recording studio mixing board">
             </div>
 
             <!-- Background grid -->
@@ -154,6 +155,8 @@
     <footer>
         <!-- place footer here -->
     </footer>
+
+    
     <!-- Bootstrap JavaScript Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
