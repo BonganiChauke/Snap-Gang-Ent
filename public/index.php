@@ -59,6 +59,11 @@
         <!-- HERO SECTION -->
         <section id="hero" aria-label="Hero">
 
+            <!-- Full background image -->
+            <div class="hero-bg-img" aria-hidden="true">
+                <img src="../public/assets/images/adi-goldstein-sdtnZ4LgbWk-unsplash.jpg" alt="Recording studio mixing board">
+            </div>
+
             <!-- Background grid -->
             <div class="hero-bg-grid" aria-hidden="true"></div>
 
@@ -128,7 +133,7 @@
         crossorigin="anonymous"></script>
 
     <!-- custom js  -->
-     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
