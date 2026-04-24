@@ -123,7 +123,34 @@
         </section>
 
     </header>
-    <main></main>
+
+    <!-- main content sections -->
+    <main>
+
+        <!-- about us section -->
+        <section id="#about">
+
+        </section>
+
+        <!-- contact us section -->
+        <section id="contact">
+
+        </section>
+
+        <!-- artists section -->
+        <section id="artists">
+
+
+        </section>
+
+        <!-- music section -->
+        <section id="#music">
+
+        </section>
+
+    </main>
+
+    <!-- footer section -->
     <footer>
         <!-- place footer here -->
     </footer>
