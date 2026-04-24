@@ -417,7 +417,7 @@ body {
 .scroll-text {
     font-family: var(--font-body);
     font-size: 10px;
-    color: var(--dim);
+    color: var(--white);
     letter-spacing: 3px;
     text-transform: uppercase;
 }
