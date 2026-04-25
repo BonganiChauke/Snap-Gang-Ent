@@ -436,6 +436,77 @@ body {
     }
 }
 
+/* About section */
+#about {
+    background: #0f0f0f;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, var(--red), var(--blue), transparent);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-text p {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: #999;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-text p:last-of-type {
+    margin-bottom: 36px;
+}
+
+.about-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.value-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-left: 3px solid var(--red);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.value-card h4 {
+    font-family: var(--font-brand);
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--white);
+    margin-bottom: 6px;
+}
+
+.value-card p {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
 /* responsiveness design */
 @media (max-width: 768px) {
     .nav-links {
