@@ -129,7 +129,55 @@
     <main>
 
         <!-- about us section -->
-        <section id="#about">
+        <section id="#about" aria-label="About us">
+
+            <!-- about container -->
+            <div class="about-container">
+                <!-- left text content -->
+                <div class="about-text">
+                    <span>Who We Are</span>
+                    <h2>Built on Sound,<br> Driven by Culture</h2>
+                    <div class="section-divider"></div>
+
+                    <!-- about text -->
+                    <p>Snap Gvng Ent is an independent music label rooted in authenticity, creativity, and community.
+                        Founded with a vision to elevate raw talent into legacy-defining careers, we operate at the
+                        intersection of music, culture, and movement.</p>
+
+                    <p>We don't just sign artists — we build brands, nurture voices, and create platforms for stories
+                        that deserve to be heard. From the studio to the stage, every release we push carries the weight
+                        of our commitment to excellence.</p>
+
+                    <p>Our roster spans multiple genres and regions, united by one shared belief: that great music
+                        changes lives. We are more than a label — we are a movement.</p>
+
+                    <!-- about values -->
+                    <div class="about-values">
+                        <!-- value cards -->
+                        <div class="value-card">
+                            <h4>Authenticity</h4>
+                            <p>Every artist we work with stays true to their voice and vision.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Legacy</h4>
+                            <p>We build careers that stand the test of time, not just trends.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Community</h4>
+                            <p>We uplift our people and invest back into the culture.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Excellence</h4>
+                            <p>From production to promotion — we settle for nothing less.</p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
 
         </section>
 
@@ -156,7 +204,7 @@
         <!-- place footer here -->
     </footer>
 
-    
+
     <!-- Bootstrap JavaScript Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
