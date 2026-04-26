@@ -173,8 +173,40 @@
 
                     </div>
 
+                </div>
 
-
+                <!-- right text -->
+                <div class="about-right">
+                    <div class="about-stat-stack">
+                        <div class="about-stat-row">
+                            <span class="about-stat-num">20+</span>
+                            <div class="about-stat-info">
+                                <strong>Signed Artists</strong>
+                                <span>Across multiple genres and regions</span>
+                            </div>
+                        </div>
+                        <div class="about-stat-row">
+                            <span class="about-stat-num">100+</span>
+                            <div class="about-stat-info">
+                                <strong>Tracks Released</strong>
+                                <span>On all major streaming platforms</span>
+                            </div>
+                        </div>
+                        <div class="about-stat-row">
+                            <span class="about-stat-num">5+</span>
+                            <div class="about-stat-info">
+                                <strong>Years in the Game</strong>
+                                <span>Building our legacy since day one</span>
+                            </div>
+                        </div>
+                        <div class="about-stat-row">
+                            <span class="about-stat-num">50+</span>
+                            <div class="about-stat-info">
+                                <strong>Shows & Events</strong>
+                                <span>Live performances across the country</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
