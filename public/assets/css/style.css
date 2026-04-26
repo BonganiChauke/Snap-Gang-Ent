@@ -574,6 +574,22 @@ body {
 }
 
 /* responsiveness design */
+/* 480 px device */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .hero-stats {
+        gap: 24px;
+    }
+}
+
+/* 768 px device */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -600,16 +616,19 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 40px;
+/* 900 px device */
+@media (max-width: 900px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        padding: 0 2rem;
     }
 
-    .hero-subtitle {
-        font-size: 15px;
+    .section-title {
+        font-size: 36px;
     }
 
-    .hero-stats {
-        gap: 24px;
+    .about-values {
+        grid-template-columns: 1fr;
     }
 }
