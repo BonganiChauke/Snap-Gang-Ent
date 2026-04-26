@@ -144,12 +144,12 @@
                         Founded with a vision to elevate raw talent into legacy-defining careers, we operate at the
                         intersection of music, culture, and movement.</p>
 
-                    <p>We don't just sign artists — we build brands, nurture voices, and create platforms for stories
+                    <p>We don't just sign artists we build brands, nurture voices, and create platforms for stories
                         that deserve to be heard. From the studio to the stage, every release we push carries the weight
                         of our commitment to excellence.</p>
 
                     <p>Our roster spans multiple genres and regions, united by one shared belief: that great music
-                        changes lives. We are more than a label — we are a movement.</p>
+                        changes lives. We are more than a label we are a movement.</p>
 
                     <!-- about values -->
                     <div class="about-values">
