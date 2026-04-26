@@ -135,8 +135,8 @@
             <div class="about-container">
                 <!-- left text content -->
                 <div class="about-text">
-                    <span>Who We Are</span>
-                    <h2>Built on Sound,<br> Driven by Culture</h2>
+                    <span class="section-label">Who We Are</span>
+                    <h2 class="section-title">Built on Sound,<br> Driven by Culture</h2>
                     <div class="section-divider"></div>
 
                     <!-- about text -->
