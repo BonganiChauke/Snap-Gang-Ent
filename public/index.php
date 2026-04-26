@@ -129,7 +129,7 @@
     <main>
 
         <!-- about us section -->
-        <section id="#about" aria-label="About us">
+        <section id="about" aria-label="About us">
 
             <!-- about container -->
             <div class="about-container">
