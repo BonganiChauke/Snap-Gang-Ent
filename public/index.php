@@ -148,7 +148,7 @@
                         that deserve to be heard. From the studio to the stage, every release we push carries the weight
                         of our commitment to excellence.</p>
 
-                    <p>Our roster spans multiple genres and regions, united by one shared belief: that great music
+                    <p>Our roster spans multiple genres and regions, united by one shared belief that great music
                         changes lives. We are more than a label we are a movement.</p>
 
                     <!-- about values -->
