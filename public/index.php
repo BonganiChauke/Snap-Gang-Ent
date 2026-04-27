@@ -216,6 +216,61 @@
         <!-- contact us section -->
         <section id="contact">
 
+            <!-- contact container -->
+            <div class="contact-container">
+                <!-- left side details -->
+                <div class="contact-details">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title">Let's Build<br>Something Great</h2>
+                    <div class="section-divider"></div>
+                    <p class="contact-desc">Whether you're an artist looking for a home, a brand wanting to collaborate,
+                        or a fan wanting to connect our doors are open. Reach out and let's talk.</p>
+                </div>
+
+                <!-- contact info details -->
+                <div class="contact-info-list">
+                    <div class="contact-info-item">
+                        <div class="contact-icon"></div>
+                        <div class="contact-info-text">
+                            <strong>Location</strong>
+                            <span>Johannesburg, South Africa</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon"></div>
+                        <div class="contact-info-text">
+                            <strong>Email</strong>
+                            <span>info@snapgvngent.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon"></div>
+                        <div class="contact-info-text">
+                            <strong>Phone</strong>
+                            <span>+27 (0) 11 000 0000</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon"></div>
+                        <div class="contact-info-text">
+                            <strong>Office Hours</strong>
+                            <span>Mon – Fri, 09:00 – 17:00 SAST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- contact social media  -->
+                <div class="contact-socials">
+                    <a href="#" class="social-btn" aria-label="Instagram">&#x1F4F8;</a>
+                    <a href="#" class="social-btn" aria-label="Twitter / X">𝕏</a>
+                    <a href="#" class="social-btn" aria-label="Facebook">f</a>
+                    <a href="#" class="social-btn" aria-label="YouTube">▶</a>
+                    <a href="#" class="social-btn" aria-label="SoundCloud">☁</a>
+                </div>
+
+            </div>
+
+
         </section>
 
         <!-- artists section -->
