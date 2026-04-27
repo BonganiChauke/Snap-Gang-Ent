@@ -788,8 +788,8 @@ body {
 
 
 .form-group textarea {
-    resize: vertical;
-    min-height: 130px;
+    resize: none;
+    min-height: 150px;
 }
 
 .form-submit {
