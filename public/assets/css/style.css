@@ -870,17 +870,37 @@ body {
 
 /* 900 px device */
 @media (max-width: 900px) {
+
+    /* about section */
     .about-container {
         grid-template-columns: 1fr;
         gap: 48px;
         padding: 0 2rem;
     }
 
+    .about-values {
+        grid-template-columns: 1fr;
+    }
+
+    /* shared section */
     .section-title {
         font-size: 36px;
     }
 
-    .about-values {
+    /* contact section  */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        padding: 0 2rem;
+    }
+
+    .form-row {
         grid-template-columns: 1fr;
     }
+
+    .contact-form-wrap {
+        padding: 28px 20px;
+    }
+
+
 }
