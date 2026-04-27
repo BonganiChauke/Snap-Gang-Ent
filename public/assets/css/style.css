@@ -602,6 +602,130 @@ body {
     color: #555;
 }
 
+/* contact section */
+#contact {
+    background: var(--black);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, var(--blue), var(--red), transparent);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 80px;
+    align-items: start;
+}
+
+/* Contact details */
+.contact-details {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-details .section-divider {
+    margin-bottom: 32px;
+}
+
+.contact-desc {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.contact-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.contact-info-item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--red-soft);
+    border: 1px solid var(--red-border);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+.contact-info-text strong {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 4px;
+}
+
+.contact-info-text span {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Social links */
+.contact-socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 36px;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #666;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.social-btn:hover {
+    background: var(--red-soft);
+    border-color: var(--red-border);
+    color: var(--red);
+}
+
+
+
 /* responsiveness design */
 /* 480 px device */
 @media (max-width: 480px) {
