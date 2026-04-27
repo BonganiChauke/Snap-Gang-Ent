@@ -1,9 +1,11 @@
+//toggle function 
 function toggleNav(btn) {
     const nav = document.getElementById('mobileNav');
     const isOpen = nav.classList.toggle('open');
     btn.setAttribute('aria-expanded', isOpen);
 }
 
+// function to close nav
 function closeNav() {
     document.getElementById('mobileNav').classList.remove('open');
     document.querySelector('.hamburger').setAttribute('aria-expanded', false);
