@@ -272,40 +272,48 @@
                 <!-- right contact form -->
                 <div class="contact-form-wrap">
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                    <!-- contact form -->
+                    <form id="contactForm" action="" method="">
+                        <!-- first name and last name -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+
+                        <!-- email and phone  -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+27 00 000 0000">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-row">
+                        <!-- message  -->
                         <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                                placeholder="Tell us about yourself, your project, or how we can help..."
+                                required></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+27 00 000 0000">
+
+                        <!-- submit button  -->
+                        <button type="button" class="form-submit" onclick="handleSubmit()">Send Message</button>
+
+                        <div class="form-success" id="formSuccess">
+                            ✓ &nbsp; Message sent! We'll be in touch within 24–48 hours.
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"
-                            placeholder="Tell us about yourself, your project, or how we can help..."
-                            required></textarea>
-                    </div>
-
-                    <button type="button" class="form-submit" onclick="handleSubmit()">Send Message</button>
-
-                    <div class="form-success" id="formSuccess">
-                        ✓ &nbsp; Message sent! We'll be in touch within 24–48 hours.
-                    </div>
+                    </form>
 
                 </div>
 
