@@ -277,12 +277,18 @@
                         <!-- first name and last name -->
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="firstName">First Name</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                                <label for="firstName">First Name </label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John"
+                                    onblur="validateName('firstName')" oninput="clearError('firstName')" required>
+                                <span class="helper-text" id="firstName-helper"></span>
+                                <span class="error-text" id="firstName-error"></span>
                             </div>
                             <div class="form-group">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                                <label for="lastName">Last Name </label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe"
+                                    onblur="validateName('lastName')" oninput="clearError('lastName')" required>
+                                <span class="helper-text" id="lastName-helper"></span>
+                                <span class="error-text" id="lastName-error"></span>
                             </div>
                         </div>
 
@@ -290,20 +296,31 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                <input type="email" id="email" name="email" placeholder="john@example.com"
+                                    onblur="validateEmail()" oninput="clearError('email')" required>
+                                <span class="helper-text" id="email-helper"></span>
+                                <span class="error-text" id="email-error"></span>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+27 00 000 0000">
+                                <input type="tel" id="phone" name="phone" placeholder="+27 00 000 0000"
+                                    onblur="validatePhone()" oninput="clearError('phone')">
+                                <span class="helper-text" id="phone-helper"></span>
+                                <span class="error-text" id="phone-error"></span>
                             </div>
                         </div>
 
                         <!-- message  -->
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="message">
+                                Message
+                            </label>
                             <textarea id="message" name="message"
                                 placeholder="Tell us about yourself, your project, or how we can help..."
+                                onblur="validateMessage()" oninput="onMessageInput()" maxlength="250"
                                 required></textarea>
+                            <span class="helper-text" id="message-helper"></span>
+                            <span class="error-text" id="message-error"></span>
                         </div>
 
                         <!-- submit button  -->
