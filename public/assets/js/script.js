@@ -39,3 +39,24 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+/* Validation helpers  */
+
+/**
+ * Show an error on a field.
+ * @param {string} fieldId  - input element id
+ * @param {string} message  - error message to display
+ */
+
+// function to show error message
+function showError(fieldId, message) {
+    const input = document.getElementById(fieldId);
+    const errorEl = document.getElementById(fieldId + '-error');
+    const group = input.closest('.form-group');
+
+    input.classList.remove('valid');
+    input.classList.add('invalid');
+    errorEl.textContent = message;
+    errorEl.classList.add('visible');
+    group.classList.add('has-error');
+}
