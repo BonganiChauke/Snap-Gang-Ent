@@ -825,6 +825,80 @@ body {
     letter-spacing: 1px;
 }
 
+/* form validation styles */
+.required-star {
+    color: var(--red);
+    font-size: 13px;
+}
+
+/* Helper text — always visible, grey */
+.helper-text {
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: #555;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+    display: block;
+    transition: color 0.2s;
+}
+
+/* Error text — shown only when invalid */
+.error-text {
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: #ff4444;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+    display: none;
+}
+
+.error-text.visible {
+    display: block;
+}
+
+/* Input valid state */
+.form-group input.valid,
+.form-group textarea.valid {
+    border-color: #2a7a2a;
+    background: rgba(42, 122, 42, 0.04);
+}
+
+/* Input invalid state */
+.form-group input.invalid,
+.form-group textarea.invalid {
+    border-color: #cc3333;
+    background: rgba(204, 0, 0, 0.05);
+}
+
+/* Hide helper when error is shown */
+.form-group.has-error .helper-text {
+    display: none;
+}
+
+/* Label row for message with char counter */
+.form-group label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.char-counter {
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: #555;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    transition: color 0.2s;
+}
+
+.char-counter.warn {
+    color: #e07b00;
+}
+
+.char-counter.limit {
+    color: #cc0000;
+}
+
 /* responsiveness design */
 /* 480 px device */
 @media (max-width: 480px) {
