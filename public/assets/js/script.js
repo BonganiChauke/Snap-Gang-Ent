@@ -60,3 +60,16 @@ function showError(fieldId, message) {
     errorEl.classList.add('visible');
     group.classList.add('has-error');
 }
+
+// Mark a field as valid and hide any error.
+function showValid(fieldId) {
+    const input = document.getElementById(fieldId);
+    const errorEl = document.getElementById(fieldId + '-error');
+    const group = input.closest('.form-group');
+
+    input.classList.remove('invalid');
+    input.classList.add('valid');
+    errorEl.textContent = '';
+    errorEl.classList.remove('visible');
+    group.classList.remove('has-error');
+}
