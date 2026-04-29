@@ -73,3 +73,16 @@ function showValid(fieldId) {
     errorEl.classList.remove('visible');
     group.classList.remove('has-error');
 }
+
+// Reset a field to neutral (no valid/invalid state)
+// Called on oninput to clear stale errors while typing
+function clearError(fieldId) {
+    const input = document.getElementById(fieldId);
+    const errorEl = document.getElementById(fieldId + '-error');
+    const group = input.closest('.form-group');
+
+    input.classList.remove('invalid');
+    errorEl.textContent = '';
+    errorEl.classList.remove('visible');
+    group.classList.remove('has-error');
+}
