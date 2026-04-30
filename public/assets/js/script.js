@@ -134,3 +134,28 @@ function validateEmail() {
     showValid('email');
     return true;
 }
+
+// function to validate phone number
+function validatePhone() {
+    const input = document.getElementById('phone');
+    const value = input.value.trim();
+    const phoneRegex = /^[0-9\s\+\-\(\)]+$/;
+
+    if (value === '') {
+        // Phone is optional — clear any state and pass
+        clearError('phone');
+        input.classList.remove('valid', 'invalid');
+        return true;
+    }
+    if (!phoneRegex.test(value)) {
+        showError('phone', 'Phone number may only contain digits, spaces, +, -, ( ).');
+        return false;
+    }
+    if (value.length > 10) {
+        showError('phone', 'Only ten digits required.');
+        return false;
+    }
+
+    showValid('phone');
+    return true;
+}
