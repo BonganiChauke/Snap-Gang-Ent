@@ -159,3 +159,26 @@ function validatePhone() {
     showValid('phone');
     return true;
 }
+
+// function to validate message
+function validateMessage() {
+    const input = document.getElementById('message');
+    const value = input.value.trim();
+    const len = value.length;
+
+    if (value === '') {
+        showError('message', 'Message is required.');
+        return false;
+    }
+    if (len < 20) {
+        showError('message', 'Message is too short minimum 20 characters.');
+        return false;
+    }
+    if (len > 250) {
+        showError('message', 'Message exceeds 250 characters.');
+        return false;
+    }
+
+    showValid('message');
+    return true;
+}
