@@ -182,3 +182,24 @@ function validateMessage() {
     showValid('message');
     return true;
 }
+
+// Live character counter plus inline helper for the message textarea
+function onMessageInput() {
+    const input = document.getElementById('message');
+    const counter = document.getElementById('messageCounter');
+    const len = input.value.length;
+
+    // Update counter text
+    counter.textContent = len + ' / 250';
+
+    // Colour-code the counter
+    counter.classList.remove('warn', 'limit');
+    if (len >= 250) {
+        counter.classList.add('limit');
+    } else if (len >= 220) {
+        counter.classList.add('warn');
+    }
+
+    // Clear any existing error while typing so it re-validates on blur
+    clearError('message');
+}
