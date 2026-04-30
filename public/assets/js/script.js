@@ -86,3 +86,31 @@ function clearError(fieldId) {
     errorEl.classList.remove('visible');
     group.classList.remove('has-error');
 }
+
+
+// function to validate inputs 
+
+// validate first and last name 
+// checking length, letters and special characters
+function validateName(fieldId) {
+    const input = document.getElementById(fieldId);
+    const value = input.value.trim();
+    const label = fieldId === 'firstName' ? 'First name' : 'Last name';
+    const nameRegex = /^[A-Za-z\s'\-]+$/;
+
+    if (value === '') {
+        showError(fieldId, label + ' is required.');
+        return false;
+    }
+    if (value.length < 3) {
+        showError(fieldId, label + ' must be at least 3 letters.');
+        return false;
+    }
+    if (!nameRegex.test(value)) {
+        showError(fieldId, label + ' cannot contain numbers or special characters.');
+        return false;
+    }
+
+    showValid(fieldId);
+    return true;
+}
