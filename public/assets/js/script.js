@@ -114,3 +114,23 @@ function validateName(fieldId) {
     showValid(fieldId);
     return true;
 }
+
+
+// function to validate email address
+function validateEmail() {
+    const input = document.getElementById('email');
+    const value = input.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (value === '') {
+        showError('email', 'Email address is required.');
+        return false;
+    }
+    if (!emailRegex.test(value)) {
+        showError('email', 'Valid email address required.');
+        return false;
+    }
+
+    showValid('email');
+    return true;
+}
