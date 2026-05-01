@@ -203,3 +203,30 @@ function onMessageInput() {
     // Clear any existing error while typing so it re-validates on blur
     clearError('message');
 }
+
+// submit function 
+function handleSubmit() {
+    const validate_names = validateName('firstName');
+    const validate_last_names = validateName('lastName');
+    const validate_names = validateEmail();
+    const validate_phones = validatePhone();
+    const validate_messages = validateMessage();
+
+    if (!validate_names || !validate_last_names || !validate_names || !validate_phones || !validate_messages) {
+        // Scroll to first invalid field
+        const firstInvalid = document.querySelector('.form-group input.invalid, .form-group textarea.invalid');
+        if (firstInvalid) {
+            firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            firstInvalid.focus();
+        }
+        return;
+    }
+
+    // All valid — show success (replace with real API/form submission here)
+    const btn = document.getElementById('submitBtn');
+    btn.textContent = 'Message Sent ✓';
+    btn.style.background = '#1a6bd4';
+    btn.disabled = true;
+    document.getElementById('formSuccess').style.display = 'block';
+    document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
