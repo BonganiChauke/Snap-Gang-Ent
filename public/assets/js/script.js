@@ -208,11 +208,11 @@ function onMessageInput() {
 function handleSubmit() {
     const validate_names = validateName('firstName');
     const validate_last_names = validateName('lastName');
-    const validate_names = validateEmail();
+    const validate_email = validateEmail();
     const validate_phones = validatePhone();
     const validate_messages = validateMessage();
 
-    if (!validate_names || !validate_last_names || !validate_names || !validate_phones || !validate_messages) {
+    if (!validate_names || !validate_last_names || !validate_email || !validate_phones || !validate_messages) {
         // Scroll to first invalid field
         const firstInvalid = document.querySelector('.form-group input.invalid, .form-group textarea.invalid');
         if (firstInvalid) {
