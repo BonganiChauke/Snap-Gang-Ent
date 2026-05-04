@@ -8,7 +8,7 @@
 }
 
 /* fonts  */
-@font-face {
+/* @font-face {
     font-family: 'Grandover';
     src: url('fonts/Grandover.woff2') format('woff2'),
         url('fonts/Grandover.woff') format('woff'),
@@ -26,7 +26,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 /* color variables and fonts */
 :root {
