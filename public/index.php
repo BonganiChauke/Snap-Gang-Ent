@@ -365,7 +365,7 @@
         crossorigin="anonymous"></script>
 
     <!-- custom js  -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js" defer></script>
 </body>
 
 </html>
