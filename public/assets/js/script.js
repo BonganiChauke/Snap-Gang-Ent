@@ -222,11 +222,20 @@ function handleSubmit() {
         return;
     }
 
-    // All valid — show success (replace with real API/form submission here)
-    const btn = document.getElementById('submitBtn');
-    btn.textContent = 'Message Sent ✓';
-    btn.style.background = '#1a6bd4';
-    btn.disabled = true;
-    document.getElementById('formSuccess').style.display = 'block';
-    document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    // All valid show success 
+    const btn        = document.getElementById('submitBtn');
+    const successEl  = document.getElementById('formSuccess');
+
+    if (btn) {
+        btn.textContent      = 'Message Sent ✓';
+        btn.style.background = '#1a6bd4';
+        btn.disabled         = true;
+        document.getElementById('contactForm').reset(); 
+    }
+
+    if (successEl) {
+        successEl.style.display = 'block';
+        successEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        document.getElementById('contactForm').reset(); 
+    }
 }
