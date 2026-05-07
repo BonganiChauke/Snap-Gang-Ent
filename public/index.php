@@ -351,6 +351,9 @@
 
         </section>
 
+        <!-- section separator  -->
+        <div class="section-sep" aria-hidden="true"></div>
+
     </main>
 
     <!-- footer section -->
