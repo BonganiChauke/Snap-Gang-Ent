@@ -354,6 +354,57 @@
         <!-- section separator  -->
         <div class="section-sep" aria-hidden="true"></div>
 
+        <!-- cta section -->
+        <section id="cta" aria-label="Subscribe">
+
+            <div class="cta-bg-word" aria-hidden="true">SUBSCRIBE</div>
+
+            <div class="cta-inner">
+
+                <!-- Left: text -->
+                <div class="cta-text">
+                    <div class="cta-badge">Stay in the Loop</div>
+
+                    <h2 class="cta-title">
+                        Never Miss a<br>
+                        <span class="accent-red">Drop</span> or <span class="accent-blue">Release</span>
+                    </h2>
+
+                    <p class="cta-subtitle">
+                        Join the Snap Gvng Ent inner circle. Be the first to hear new music,
+                        get exclusive artist updates, early access to events, and label news
+                        delivered straight to your inbox.
+                    </p>
+                </div>
+
+                <!-- Right: form -->
+                <div class="cta-form-col">
+
+                    <div class="subscribe-form" id="subscribeForm">
+                        <input type="email" id="subEmail" class="subscribe-input" placeholder="Enter your email address"
+                            autocomplete="email" aria-label="Email address">
+                        <button type="button" class="subscribe-btn" id="subscribeBtn">
+                            Subscribe
+                        </button>
+                    </div>
+
+                    <div class="sub-error-text" id="subEmailError"></div>
+                    <div class="sub-success" id="subSuccess">
+                        ✓ &nbsp; You're in! Welcome to the Snap Gvng Ent family.
+                    </div>
+
+                    <div class="cta-perks">
+                        <div class="cta-perk"><span class="cta-perk-dot"></span>No spam, ever</div>
+                        <div class="cta-perk"><span class="cta-perk-dot"></span>Unsubscribe anytime</div>
+                        <div class="cta-perk"><span class="cta-perk-dot"></span>Exclusive content</div>
+                        <div class="cta-perk"><span class="cta-perk-dot"></span>Early access to events</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <!-- footer section -->
