@@ -1168,6 +1168,15 @@ body {
     .hero-stats {
         gap: 24px;
     }
+
+    /* cta section  */
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-btn {
+        padding: 13px;
+    }
 }
 
 /* 768 px device */
