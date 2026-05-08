@@ -1197,6 +1197,23 @@ body {
     }
 }
 
+/* 860 px device */
+@media (max-width: 860px) {
+    .cta-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding: 0 2rem;
+    }
+
+    .cta-text {
+        text-align: left;
+    }
+
+    .cta-title {
+        font-size: 32px;
+    }
+}
+
 /* 900 px device */
 @media (max-width: 900px) {
 
