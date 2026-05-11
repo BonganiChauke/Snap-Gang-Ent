@@ -357,7 +357,7 @@
         <!-- cta section -->
         <section id="cta" aria-label="Subscribe">
 
-            <div class="cta-bg-word" aria-hidden="true">SUBSCRIBE</div>
+            <!-- <div class="cta-bg-word" aria-hidden="true">SUBSCRIBE</div> -->
 
             <div class="cta-inner">
 
