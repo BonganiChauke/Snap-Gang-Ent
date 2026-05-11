@@ -1360,6 +1360,21 @@ body {
     }
 }
 
+/* 520 px device */
+@media (max-width: 520px) {
+    /* footer section */
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
 /* 768 px device */
 @media (max-width: 768px) {
     .nav-links {
@@ -1436,6 +1451,16 @@ body {
 
     .contact-form-wrap {
         padding: 28px 20px;
+    }
+
+    /* footer section */
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+    }
+
+    .footer-inner {
+        padding: 0 2rem;
     }
 
 
