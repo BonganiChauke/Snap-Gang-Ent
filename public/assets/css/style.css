@@ -1154,6 +1154,187 @@ body {
     background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.06), transparent);
 }
 
+/* footer section */
+.site-footer {
+    background: #000000;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 64px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle red glow bottom-left */
+.site-footer::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    background: radial-gradient(circle at bottom left, rgba(204, 0, 0, 0.07), transparent 70%);
+    pointer-events: none;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Top grid: brand col + nav cols */
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Brand column */
+.footer-logo {
+    font-family: var(--font-brand);
+    font-size: 24px;
+    font-weight: normal;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer-logo span {
+    color: var(--red);
+}
+
+.footer-tagline {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    max-width: 260px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-social-btn {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #555;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.footer-social-btn:hover {
+    background: var(--red-soft);
+    border-color: var(--red-border);
+    color: var(--red);
+}
+
+/* Nav columns */
+.footer-nav-col h4 {
+    font-family: var(--font-body);
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.footer-nav-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-nav-col ul li a {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: #555;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+.footer-nav-col ul li a:hover {
+    color: var(--white);
+}
+
+/* Bottom bar */
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-copy {
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.footer-copy span {
+    color: var(--red);
+}
+
+.footer-legal {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-legal a {
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: #333;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+.footer-legal a:hover {
+    color: #666;
+}
+
+/* Back to top button */
+.footer-top-btn {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    cursor: pointer;
+}
+
+.footer-top-btn:hover {
+    background: var(--red-soft);
+    border-color: var(--red-border);
+    color: var(--red);
+}
+
 /* responsiveness design */
 /* 480 px device */
 @media (max-width: 480px) {
