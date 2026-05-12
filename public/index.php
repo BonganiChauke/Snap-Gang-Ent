@@ -34,7 +34,7 @@
             </ul>
 
             <ul class="nav-links">
-                <a href="" class="btn-outline-blue lgn-btn">Login</a>
+                <a href="./login.php" class="btn-outline-blue lgn-btn">Login</a>
             </ul>
 
             <!-- Mobile hamburger button -->
