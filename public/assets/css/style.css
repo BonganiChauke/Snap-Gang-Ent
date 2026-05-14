@@ -1523,6 +1523,345 @@ body {
     color: #666;
 }
 
+/* ── Right panel — login form ──────────────────────────── */
+.form-panel {
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle top-right glow */
+.form-panel::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(26, 107, 212, 0.07), transparent 70%);
+    pointer-events: none;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    z-index: 1;
+    animation: fadeUp 0.5s ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form header */
+.form-heading {
+    margin-bottom: 36px;
+}
+
+.form-heading h1 {
+    font-family: var(--font-brand);
+    font-size: 34px;
+    font-weight: normal;
+    color: var(--white);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.form-heading p {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.3px;
+}
+
+.form-heading p a {
+    color: var(--red);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.form-heading p a:hover {
+    color: #ff3333;
+}
+
+/* Form groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-family: var(--font-body);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--dim);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group label a {
+    font-family: var(--font-body);
+    font-size: 10px;
+    color: var(--blue-soft);
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.form-group label a:hover {
+    color: var(--white);
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.input-wrap input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    padding: 13px 16px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--white);
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+    letter-spacing: 0.3px;
+}
+
+.input-wrap input::placeholder {
+    color: #2a2a2a;
+}
+
+.input-wrap input:focus {
+    border-color: var(--red);
+    background: rgba(204, 0, 0, 0.04);
+}
+
+.input-wrap input.valid {
+    border-color: #1e6b1e;
+    background: rgba(30, 107, 30, 0.04);
+}
+
+.input-wrap input.invalid {
+    border-color: #cc3333;
+    background: rgba(204, 0, 0, 0.05);
+}
+
+/* Password toggle */
+.pw-toggle {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--dim);
+    font-size: 14px;
+    padding: 4px;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+.pw-toggle:hover {
+    color: var(--white);
+}
+
+/* Error text */
+.field-error {
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: #ff4444;
+    letter-spacing: 0.3px;
+    display: none;
+}
+
+.field-error.visible {
+    display: block;
+}
+
+/* Remember me row */
+.remember-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.custom-checkbox {
+    width: 16px;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--divider);
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s, border-color 0.2s;
+    position: relative;
+}
+
+.custom-checkbox.checked {
+    background: var(--red);
+    border-color: var(--red);
+}
+
+.custom-checkbox.checked::after {
+    content: '✓';
+    color: #fff;
+    font-size: 10px;
+    line-height: 1;
+}
+
+#rememberInput {
+    display: none;
+}
+
+.remember-label {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--dim);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Submit button */
+.btn-login {
+    width: 100%;
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 14px;
+    font-family: var(--font-body);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-bottom: 20px;
+}
+
+.btn-login:hover {
+    background: var(--red-dark);
+}
+
+.btn-login:active {
+    transform: scale(0.99);
+}
+
+.btn-login:disabled {
+    background: #1a6bd4;
+    cursor: default;
+    transform: none;
+}
+
+/* Alert banner */
+.form-alert {
+    display: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.form-alert.error {
+    display: block;
+    background: rgba(204, 0, 0, 0.1);
+    border: 1px solid rgba(204, 0, 0, 0.25);
+    color: #ff6666;
+}
+
+.form-alert.success {
+    display: block;
+    background: rgba(26, 107, 212, 0.1);
+    border: 1px solid rgba(26, 107, 212, 0.25);
+    color: var(--blue-soft);
+}
+
+/* Divider */
+.or-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--divider);
+}
+
+.or-divider span {
+    font-family: var(--font-body);
+    font-size: 10px;
+    color: var(--dim);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Social login buttons */
+.social-logins {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    letter-spacing: 0.5px;
+}
+
+.btn-social:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.btn-social .icon {
+    font-size: 15px;
+}
+
 /* responsiveness design */
 /* 480 px device */
 @media (max-width: 480px) {
