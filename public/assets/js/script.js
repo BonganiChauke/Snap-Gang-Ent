@@ -262,4 +262,39 @@ document.addEventListener('DOMContentLoaded', function () {
     const rememberLabel = document.getElementById('rememberLabel');
     const formAlert = document.getElementById('formAlert');
 
+    //helpers
+    // show error function
+    function showFieldError(inputEl, errorId, message) {
+        inputEl.classList.add('invalid');
+        inputEl.classList.remove('valid');
+        const el = document.getElementById(errorId);
+        if (el) { el.textContent = message; el.classList.add('visible'); }
+    }
+
+    // show valid state
+    function showFieldValid(inputEl, errorId) {
+        inputEl.classList.remove('invalid');
+        inputEl.classList.add('valid');
+        const el = document.getElementById(errorId);
+        if (el) { el.textContent = ''; el.classList.remove('visible'); }
+    }
+
+    // clear input field
+    function clearField(inputEl, errorId) {
+        inputEl.classList.remove('invalid', 'valid');
+        const el = document.getElementById(errorId);
+        if (el) { el.textContent = ''; el.classList.remove('visible'); }
+    }
+
+    // show alert dialog
+    function showAlert(type, message) {
+        formAlert.className = 'form-alert ' + type;
+        formAlert.textContent = message;
+    }
+
+    // hide alert dialog 
+    function hideAlert() {
+        formAlert.className = 'form-alert';
+        formAlert.textContent = '';
+    }
 });
