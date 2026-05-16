@@ -251,4 +251,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    /* ------------ Login form ------------------------------ */
+
+    // elements
+    const emailInput = document.getElementById('loginEmail');
+    const passwordInput = document.getElementById('loginPassword');
+    const loginBtn = document.getElementById('loginBtn');
+    const pwToggle = document.getElementById('pwToggle');
+    const rememberBox = document.getElementById('rememberBox');
+    const rememberLabel = document.getElementById('rememberLabel');
+    const formAlert = document.getElementById('formAlert');
+
 });
