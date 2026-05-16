@@ -231,10 +231,17 @@ document.addEventListener('DOMContentLoaded', function () {
         const successEl = document.getElementById('formSuccess');
 
         if (btn) {
-            btn.textContent = 'Message Sent ✓';
-            btn.style.background = '#1a6bd4';
-            btn.disabled = true;
-            document.getElementById('contactForm').reset();
+
+            // time out function to remove message after 3 seconds
+            setTimeout(() => {
+
+                btn.textContent = 'Message Sent ✓';
+                btn.style.background = '#1a6bd4';
+                btn.disabled = true;
+                document.getElementById('contactForm').reset();
+
+            }, 3000)
+
         }
 
         if (successEl) {
