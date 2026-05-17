@@ -102,21 +102,21 @@
                     </div>
 
                     <!-- Remember me -->
-                    <div class="remember-row">
+                    <!-- <div class="remember-row">
                         <div class="custom-checkbox" id="rememberBox" role="checkbox" aria-checked="false" tabindex="0">
                         </div>
                         <input type="checkbox" id="rememberInput">
                         <label class="remember-label" for="rememberInput" id="rememberLabel">Remember me for 30
                             days</label>
-                    </div>
+                    </div> -->
 
                     <!-- Submit -->
                     <button type="button" class="btn-login" id="loginBtn">Sign In</button>
 
                     <!-- Or divider -->
-                    <div class="or-divider"><span>or continue with</span></div>
+                    <!-- <div class="or-divider"><span>or continue with</span></div>
 
-                    <!-- Social logins -->
+                     Social logins 
                     <div class="social-logins">
                         <a href="#" class="btn-social">
                             <span class="icon">G</span> Google
@@ -124,7 +124,7 @@
                         <a href="#" class="btn-social">
                             <span class="icon">f</span> Facebook
                         </a>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
