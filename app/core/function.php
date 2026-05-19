@@ -11,7 +11,7 @@ function show($stuff){
 
 // return file function
 function pages ($file){
-    return "../../app/pages/".$file."php";
+    return "../app/pages/".$file.".php";
 }
 
 ?>

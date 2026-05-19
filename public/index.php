@@ -5,7 +5,7 @@
 session_start();
 
 // Includes the function file from the core folder.
-require "./app/core/function.php";
+require "../app/core/function.php";
 
 // Get the 'url' parameter from the URL using GET.
 // If no URL is provided, default to 'home'.
