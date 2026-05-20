@@ -17,6 +17,7 @@
 <body>
     <header>
         <!-- place navbar here -->
+         <nav></nav>
     </header>
     <main></main>
     <footer>
