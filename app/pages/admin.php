@@ -20,8 +20,11 @@
          <nav></nav>
     </header>
     <main></main>
-    <footer>
+
+    <!-- footer -->
+    <footer class="dash-footer">
         <!-- place footer here -->
+             <p>&copy; 2026 <span>Snap Gvng Ent</span>. All rights reserved. Admin Panel.</p>
     </footer>
     <!-- Bootstrap JavaScript Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
