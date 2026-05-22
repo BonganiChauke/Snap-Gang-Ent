@@ -19,7 +19,70 @@
         <!-- place navbar here -->
          <nav></nav>
     </header>
-    <main></main>
+
+
+
+
+    <main>
+
+     <!-- ════════════════════════════════════════════════
+         SIDEBAR
+    ════════════════════════════════════════════════ -->
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Admin navigation">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <div>
+                <div class="sidebar-logo-text"><span>Snap</span> Gvng Ent</div>
+            </div>
+            <span class="sidebar-badge">Admin</span>
+        </div>
+
+        <!-- Nav links -->
+        <nav class="sidebar-nav">
+
+            <div class="nav-section-label">Main</div>
+
+            <button class="nav-item active" onclick="setActive(this, 'Home')">
+                <span class="nav-icon">🏠</span>
+                Home
+            </button>
+
+            <button class="nav-item" onclick="setActive(this, 'Music')">
+                <span class="nav-icon">🎵</span>
+                Music
+                <span class="nav-badge">12</span>
+            </button>
+
+            <button class="nav-item" onclick="setActive(this, 'Artists')">
+                <span class="nav-icon">🎤</span>
+                Artists
+            </button>
+
+            <button class="nav-item" onclick="setActive(this, 'Categories')">
+                <span class="nav-icon">🏷</span>
+                Categories
+            </button>
+
+            <div class="nav-section-label">Account</div>
+
+            <button class="nav-item" onclick="setActive(this, 'Profile')">
+                <span class="nav-icon">👤</span>
+                Profile
+            </button>
+
+        </nav>
+
+        <!-- Logout -->
+        <div class="sidebar-footer">
+            <button class="nav-item logout" onclick="handleLogout()">
+                <span class="nav-icon">⏻</span>
+                Logout
+            </button>
+        </div>
+
+
+    </main>
 
     <!-- footer -->
     <footer class="dash-footer">
