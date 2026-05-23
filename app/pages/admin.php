@@ -17,7 +17,7 @@
 <body>
     <header>
         <!-- place navbar here -->
-         <nav></nav>
+        <nav></nav>
     </header>
 
 
@@ -25,61 +25,61 @@
 
     <main>
 
-     <!-- ════════════════════════════════════════════════
+        <!-- ════════════════════════════════════════════════
          SIDEBAR
     ════════════════════════════════════════════════ -->
-    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Admin navigation">
+        <aside class="sidebar" id="sidebar" role="navigation" aria-label="Admin navigation">
 
-        <!-- Logo -->
-        <div class="sidebar-logo">
-            <div>
-                <div class="sidebar-logo-text"><span>Snap</span> Gvng Ent</div>
+            <!-- Logo -->
+            <div class="sidebar-logo">
+                <div>
+                    <div class="sidebar-logo-text"><span>Snap</span> Gvng Ent</div>
+                </div>
+                <span class="sidebar-badge">Admin</span>
             </div>
-            <span class="sidebar-badge">Admin</span>
-        </div>
 
-        <!-- Nav links -->
-        <nav class="sidebar-nav">
+            <!-- Nav links -->
+            <nav class="sidebar-nav">
 
-            <div class="nav-section-label">Main</div>
+                <div class="nav-section-label">Main</div>
 
-            <button class="nav-item active" onclick="setActive(this, 'Home')">
-                <span class="nav-icon">🏠</span>
-                Home
-            </button>
+                <button class="nav-item active" onclick="setActive(this, 'Home')">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </button>
 
-            <button class="nav-item" onclick="setActive(this, 'Music')">
-                <span class="nav-icon">🎵</span>
-                Music
-                <span class="nav-badge">12</span>
-            </button>
+                <button class="nav-item" onclick="setActive(this, 'Music')">
+                    <span class="nav-icon">🎵</span>
+                    Music
+                    <span class="nav-badge">12</span>
+                </button>
 
-            <button class="nav-item" onclick="setActive(this, 'Artists')">
-                <span class="nav-icon">🎤</span>
-                Artists
-            </button>
+                <button class="nav-item" onclick="setActive(this, 'Artists')">
+                    <span class="nav-icon">🎤</span>
+                    Artists
+                </button>
 
-            <button class="nav-item" onclick="setActive(this, 'Categories')">
-                <span class="nav-icon">🏷</span>
-                Categories
-            </button>
+                <button class="nav-item" onclick="setActive(this, 'Categories')">
+                    <span class="nav-icon">🏷</span>
+                    Categories
+                </button>
 
-            <div class="nav-section-label">Account</div>
+                <div class="nav-section-label">Account</div>
 
-            <button class="nav-item" onclick="setActive(this, 'Profile')">
-                <span class="nav-icon">👤</span>
-                Profile
-            </button>
+                <button class="nav-item" onclick="setActive(this, 'Profile')">
+                    <span class="nav-icon">👤</span>
+                    Profile
+                </button>
 
-        </nav>
+            </nav>
 
-        <!-- Logout -->
-        <div class="sidebar-footer">
-            <button class="nav-item logout" onclick="handleLogout()">
-                <span class="nav-icon">⏻</span>
-                Logout
-            </button>
-        </div>
+            <!-- Logout -->
+            <div class="sidebar-footer">
+                <button class="nav-item logout" onclick="handleLogout()">
+                    <span class="nav-icon">⏻</span>
+                    Logout
+                </button>
+            </div>
 
             <!-- Mobile overlay -->
             <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
@@ -90,7 +90,7 @@
     <!-- footer -->
     <footer class="dash-footer">
         <!-- place footer here -->
-             <p>&copy; 2026 <span>Snap Gvng Ent</span>. All rights reserved. Admin Panel.</p>
+        <p>&copy; 2026 <span>Snap Gvng Ent</span>. All rights reserved. Admin Panel.</p>
     </footer>
     <!-- Bootstrap JavaScript Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
