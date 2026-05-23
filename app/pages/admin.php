@@ -81,6 +81,9 @@
             </button>
         </div>
 
+            <!-- Mobile overlay -->
+            <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
 
     </main>
 
