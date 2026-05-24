@@ -84,6 +84,26 @@
             <!-- Mobile overlay -->
             <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
 
+            <!-- Topbar -->
+            <div class="topbar">
+                <div class="topbar-left">
+                    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle sidebar">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <span class="topbar-title" id="topbarTitle">Dashboard</span>
+                </div>
+                <div class="topbar-right">
+                    <div class="topbar-search">
+                        <span class="topbar-search-icon">🔍</span>
+                        <input type="text" placeholder="Search…" aria-label="Search">
+                    </div>
+                    <div class="topbar-notif" title="Notifications">
+                        🔔
+                        <span class="notif-dot"></span>
+                    </div>
+                    <div class="topbar-avatar" title="Admin profile">A</div>
+                </div>
+            </div>
 
     </main>
 
