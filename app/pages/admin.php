@@ -105,6 +105,21 @@
                 </div>
             </div>
 
+             <!-- Page header -->
+            <div class="page-header">
+                <div class="page-header-top">
+                    <div>
+                        <p class="page-label">Overview</p>
+                        <h1 class="page-title">Dashboard</h1>
+                        <p class="page-subtitle">Welcome back, Admin. Here's what's happening.</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn-outline">Export</button>
+                        <button class="btn-primary">+ Add Release</button>
+                    </div>
+                </div>
+            </div>
+
     </main>
 
     <!-- footer -->
