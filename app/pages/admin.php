@@ -120,6 +120,39 @@
                 </div>
             </div>
 
+            <!-- Stats grid -->
+            <div class="stats-grid">
+
+                <div class="stat-card red">
+                    <div class="stat-icon">🎵</div>
+                    <div class="stat-value">148</div>
+                    <div class="stat-label">Total Tracks</div>
+                    <span class="stat-change up">+8 this month</span>
+                </div>
+
+                <div class="stat-card blue">
+                    <div class="stat-icon">🎤</div>
+                    <div class="stat-value">24</div>
+                    <div class="stat-label">Active Artists</div>
+                    <span class="stat-change up">+3 this month</span>
+                </div>
+
+                <div class="stat-card white">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-value">5.2k</div>
+                    <div class="stat-label">Subscribers</div>
+                    <span class="stat-change up">+240 this month</span>
+                </div>
+
+                <div class="stat-card mix">
+                    <div class="stat-icon">▶</div>
+                    <div class="stat-value">89k</div>
+                    <div class="stat-label">Total Streams</div>
+                    <span class="stat-change down">-2% this week</span>
+                </div>
+
+            </div>
+
     </main>
 
     <!-- footer -->
