@@ -105,7 +105,7 @@
                 </div>
             </div>
 
-             <!-- Page header -->
+            <!-- Page header -->
             <div class="page-header">
                 <div class="page-header-top">
                     <div>
@@ -149,6 +149,147 @@
                     <div class="stat-value">89k</div>
                     <div class="stat-label">Total Streams</div>
                     <span class="stat-change down">-2% this week</span>
+                </div>
+
+            </div>
+
+            <!-- Content row: tracks + activity -->
+            <div class="content-row">
+
+                <!-- Recent tracks -->
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <h3>Recent Releases</h3>
+                        <button class="panel-action">View All</button>
+                    </div>
+                    <table class="tracks-table">
+                        <thead>
+                            <tr>
+                                <th>Track</th>
+                                <th>Category</th>
+                                <th>Streams</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="track-info">
+                                        <div class="track-thumb red">🎵</div>
+                                        <div>
+                                            <div class="track-name">No Limits</div>
+                                            <div class="track-artist">AJ Wavez</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Hip-Hop</td>
+                                <td>12.4k</td>
+                                <td><span class="track-status live">Live</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="track-info">
+                                        <div class="track-thumb blue">🎵</div>
+                                        <div>
+                                            <div class="track-name">Midnight Grind</div>
+                                            <div class="track-artist">K-Solo</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Afro-Trap</td>
+                                <td>9.1k</td>
+                                <td><span class="track-status live">Live</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="track-info">
+                                        <div class="track-thumb white">🎵</div>
+                                        <div>
+                                            <div class="track-name">Legacy Run</div>
+                                            <div class="track-artist">MC Throne</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Rap</td>
+                                <td>—</td>
+                                <td><span class="track-status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="track-info">
+                                        <div class="track-thumb red">🎵</div>
+                                        <div>
+                                            <div class="track-name">Cold Summer</div>
+                                            <div class="track-artist">Lyra</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>R&amp;B</td>
+                                <td>—</td>
+                                <td><span class="track-status draft">Draft</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="track-info">
+                                        <div class="track-thumb blue">🎵</div>
+                                        <div>
+                                            <div class="track-name">Fire Routes</div>
+                                            <div class="track-artist">Snap Collective</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Hip-Hop</td>
+                                <td>7.8k</td>
+                                <td><span class="track-status live">Live</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Activity feed -->
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <h3>Activity</h3>
+                        <button class="panel-action">Clear</button>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <span class="activity-dot red"></span>
+                            <span class="activity-text"><strong>AJ Wavez</strong> submitted a new track for
+                                review.</span>
+                            <span class="activity-time">2m ago</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-dot green"></span>
+                            <span class="activity-text"><strong>No Limits</strong> went live on all platforms.</span>
+                            <span class="activity-time">1h ago</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-dot blue"></span>
+                            <span class="activity-text"><strong>MC Throne</strong> joined the roster.</span>
+                            <span class="activity-time">3h ago</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-dot white"></span>
+                            <span class="activity-text"><strong>48 new subscribers</strong> joined this week.</span>
+                            <span class="activity-time">5h ago</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-dot red"></span>
+                            <span class="activity-text"><strong>Cold Summer</strong> moved to draft.</span>
+                            <span class="activity-time">Yesterday</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-dot blue"></span>
+                            <span class="activity-text"><strong>Lyra</strong> updated her profile bio.</span>
+                            <span class="activity-time">Yesterday</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-dot green"></span>
+                            <span class="activity-text"><strong>Fire Routes</strong> reached 7k streams.</span>
+                            <span class="activity-time">2 days ago</span>
+                        </div>
+                    </div>
                 </div>
 
             </div>
