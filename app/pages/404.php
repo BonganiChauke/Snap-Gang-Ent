@@ -24,6 +24,14 @@
         <div class="bg-accent-left" aria-hidden="true"></div>
         <div class="bg-accent-right" aria-hidden="true"></div>
 
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation" aria-label="Site navigation">
+            <a href="index.html" class="navbar-brand">
+                <span>Snap</span> Gvng Ent
+            </a>
+            <a href="javascript:history.back()" class="navbar-back">Go back</a>
+        </nav>
+
         <!-- main content  -->
         <main>
             Page not found
