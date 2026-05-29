@@ -16,6 +16,14 @@
 
     <div class="page">
 
+        <!-- Background layers -->
+        <div class="bg-grid" aria-hidden="true"></div>
+        <div class="bg-glow" aria-hidden="true"></div>
+        <div class="bg-scanlines" aria-hidden="true"></div>
+        <div class="bg-404" aria-hidden="true">404</div>
+        <div class="bg-accent-left" aria-hidden="true"></div>
+        <div class="bg-accent-right" aria-hidden="true"></div>
+
         <!-- main content  -->
         <main>
             Page not found
