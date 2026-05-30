@@ -1862,6 +1862,94 @@ body {
     font-size: 15px;
 }
 
+/* 404 styling */
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ── Background effects ─────────────────────────────────── */
+
+/* Grid */
+.bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(204, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(204, 0, 0, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+}
+
+/* Radial glow */
+.bg-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 50%,
+            rgba(204, 0, 0, 0.1),
+            rgba(26, 107, 212, 0.06),
+            transparent 65%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Left accent line */
+.bg-accent-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, transparent, var(--red), var(--blue), transparent);
+    z-index: 1;
+}
+
+/* Right accent line */
+.bg-accent-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, transparent, var(--blue), var(--red), transparent);
+    z-index: 1;
+}
+
+/* Huge 404 watermark */
+.bg-404 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-brand);
+    font-size: clamp(200px, 35vw, 420px);
+    font-weight: normal;
+    color: var(--white);
+    opacity: 0.025;
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+    line-height: 1;
+    z-index: 0;
+    letter-spacing: -8px;
+}
+
+/* Scanline overlay */
+.bg-scanlines {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(0deg,
+            transparent,
+            transparent 3px,
+            rgba(0, 0, 0, 0.08) 3px,
+            rgba(0, 0, 0, 0.08) 4px);
+    z-index: 1;
+    pointer-events: none;
+}
+
 /* responsiveness design */
 /* 480 px device */
 @media (max-width: 480px) {
