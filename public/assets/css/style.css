@@ -1989,6 +1989,23 @@ body {
         align-items: flex-start;
         gap: 16px;
     }
+
+    /* 404 styling  */
+    .error-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-home,
+    .btn-back {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .bg-404 {
+        opacity: 0.015;
+    }
 }
 
 /* 768 px device */
