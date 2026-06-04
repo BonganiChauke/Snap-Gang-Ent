@@ -2164,6 +2164,27 @@ body {
     }
 }
 
+/* ── Footer ─────────────────────────────────────────────── */
+.footer-page {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.footer-page p {
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: var(--dim);
+    letter-spacing: 0.5px;
+}
+
+.footer-page span {
+    color: var(--red);
+}
+
 /* responsiveness design */
 /* 480 px device */
 @media (max-width: 480px) {
