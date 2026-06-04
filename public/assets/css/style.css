@@ -1950,6 +1950,220 @@ body {
     pointer-events: none;
 }
 
+/* ── Main content ───────────────────────────────────────── */
+.content {
+    position: relative;
+    z-index: 5;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Error code badge */
+.error-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--red-soft);
+    border: 1px solid var(--red-border);
+    color: #ff5555;
+    font-family: var(--font-body);
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 7px 18px;
+    border-radius: 20px;
+    margin-bottom: 28px;
+    animation: fadeDown 0.5s ease both;
+}
+
+.error-badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--red);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.4;
+        transform: scale(0.6);
+    }
+}
+
+/* Heading */
+.error-heading {
+    font-family: var(--font-brand);
+    font-size: clamp(36px, 6vw, 68px);
+    font-weight: normal;
+    color: var(--white);
+    letter-spacing: 2px;
+    line-height: 1.05;
+    margin-bottom: 6px;
+    animation: fadeDown 0.5s ease 0.1s both;
+}
+
+.error-heading .accent-red {
+    color: var(--red);
+}
+
+.error-heading .accent-blue {
+    color: var(--blue);
+}
+
+/* Divider */
+.error-divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, var(--red), var(--blue));
+    border-radius: 2px;
+    margin: 20px auto;
+    animation: fadeDown 0.5s ease 0.15s both;
+}
+
+/* Description */
+.error-desc {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.75;
+    max-width: 420px;
+    margin-bottom: 12px;
+    animation: fadeDown 0.5s ease 0.2s both;
+}
+
+.error-path {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--dim);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 5px 14px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    margin-bottom: 36px;
+    animation: fadeDown 0.5s ease 0.25s both;
+    word-break: break-all;
+    max-width: 380px;
+}
+
+/* Action buttons */
+.error-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    animation: fadeDown 0.5s ease 0.3s both;
+}
+
+.btn-home {
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 13px 32px;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-home:hover {
+    background: var(--red-dark);
+}
+
+.btn-home:active {
+    transform: scale(0.98);
+}
+
+.btn-back {
+    background: transparent;
+    color: var(--blue-soft);
+    border: 1px solid rgba(26, 107, 212, 0.3);
+    padding: 13px 32px;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-back:hover {
+    background: rgba(26, 107, 212, 0.1);
+    color: var(--white);
+}
+
+/* Quick links */
+.quick-links {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeDown 0.5s ease 0.35s both;
+}
+
+.quick-label {
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: var(--dim);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 4px;
+    line-height: 28px;
+}
+
+.quick-link {
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
+    letter-spacing: 0.5px;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.quick-link:hover {
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ── Animations ─────────────────────────────────────────── */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* responsiveness design */
 /* 480 px device */
 @media (max-width: 480px) {
