@@ -74,8 +74,8 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 <span>Snap Gvng Ent</span>. All rights reserved.</p>
+    <footer class="footer-page">
+        <p>&copy; 2026 <span>Snap Gvng Ent</span>. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JavaScript Bundle (includes Popper) -->
