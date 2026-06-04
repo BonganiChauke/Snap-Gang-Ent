@@ -298,10 +298,18 @@ document.addEventListener('DOMContentLoaded', function () {
         formAlert.textContent = '';
     }
 
-     /* ── Logout ────────────────────────────────────────── */
+    /* ── Logout ────────────────────────────────────────── */
     window.handleLogout = function () {
         if (confirm('Are you sure you want to log out?')) {
             window.location.href = 'login.html';
         }
     };
+
+    // Show the URL the user tried to access
+    (function () {
+        const el = document.getElementById('errorPath');
+        if (el) {
+            el.textContent = window.location.href;
+        }
+    })();
 });
