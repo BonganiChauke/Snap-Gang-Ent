@@ -1950,6 +1950,28 @@ body {
     pointer-events: none;
 }
 
+.navbar-back {
+    font-family: var(--font-body);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+}
+
+.navbar-back:hover {
+    color: var(--white);
+}
+
+.navbar-back::before {
+    content: '';
+    font-size: 14px;
+}
+
 /* ── Main content ───────────────────────────────────────── */
 .content {
     position: relative;
