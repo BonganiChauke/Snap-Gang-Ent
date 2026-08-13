@@ -13,7 +13,7 @@ require "../app/core/function.php";
 // Example:
 // localhost/project/home/about
 // $_GET['url'] = "home/about"
-$URL = $_GET['url'] ?? 'home';
+$URL = $_GET['url'] ?? 'index';
 
 
 // Split the URL string into an array using "/" as the separator.
