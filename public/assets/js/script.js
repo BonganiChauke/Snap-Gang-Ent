@@ -312,4 +312,50 @@ document.addEventListener('DOMContentLoaded', function () {
             el.textContent = window.location.href;
         }
     })();
+
+    /* Admin Sidebar toggle (mobile)  */
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebarOverlay');
+    const hamburger = document.getElementById('hamburgerBtn');
+
+    hamburger.addEventListener('click', function () {
+        sidebar.classList.toggle('open');
+        overlay.classList.toggle('open');
+    });
+
+    function closeSidebar() {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('open');
+    }
+
+    window.closeSidebar = closeSidebar;
+
+    /* Active nav item */
+    window.setActive = function (btn, label) {
+        document.querySelectorAll('.nav-item').forEach(function (el) {
+            el.classList.remove('active');
+        });
+        btn.classList.add('active');
+        document.getElementById('topbarTitle').textContent = label;
+
+        // Close sidebar on mobile after selecting
+        if (window.innerWidth <= 768) closeSidebar();
+    };
+
+    /* ── Logout  */
+    window.handleLogout = function () {
+        if (confirm('Are you sure you want to log out?')) {
+            window.location.href = '../../../app/pages/login.php';
+        }
+    };
+
+    /* ── Animate bars on load ──────────────────────────── */
+    // Bars start at 0 width via inline style and transition to final value
+    document.querySelectorAll('.bar-fill').forEach(function (bar) {
+        const target = bar.style.width;
+        bar.style.width = '0%';
+        setTimeout(function () {
+            bar.style.width = target;
+        }, 400);
+    });
 });
