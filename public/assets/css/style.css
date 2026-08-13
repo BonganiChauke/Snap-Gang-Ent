@@ -44,6 +44,13 @@
     --divider: rgba(255, 255, 255, 0.08);
     --font-brand: 'Grandover', Georgia, serif;
     --font-body: 'Arexa', Arial, sans-serif;
+    --blue-dim: rgba(26, 107, 212, 0.12);
+    --sidebar-w: 240px;
+    --topbar-h: 60px;
+    --bg: #080808;
+    --surface: #0f0f0f;
+    --panel: #141414;
+    --panel-border: rgba(255, 255, 255, 0.06);
 }
 
 html {
