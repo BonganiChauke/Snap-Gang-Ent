@@ -18,6 +18,35 @@
 <body>
     <header>
         <!-- place navbar here -->
+         <!-- nav bar -->
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+
+            <a class="navbar-brand" href="#">
+                <span class="accent-red">Snap</span> Gvng <span class="accent-blue">Ent</span>
+            </a>
+
+            <!-- Desktop nav links -->
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="./index.php">About us</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <li><a href="#artists">Artists</a></li>
+                <li><a href="#music">Music</a></li>
+            </ul>
+
+            <ul class="nav-links">
+                <a href="#" class="btn-outline-blue lgn-btn">Login</a>
+            </ul>
+
+            <!-- Mobile hamburger button -->
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+
     </header>
 
     <!-- main content -->
