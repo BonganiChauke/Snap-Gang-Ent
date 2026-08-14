@@ -1,16 +1,15 @@
 <?php
-
 // app/core/config.php
-$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-$host     = $_SERVER['SERVER_NAME'];
 
-if ($host === 'localhost') {
-    define('ROOT',     'http://localhost/Snap_Gang_Ent/public');
-    define('BASE_URL', 'http://localhost/Snap_Gang_Ent/public/assets/');
-} else {
-    define('ROOT',     $protocol . '://www.mywebsite.com/public');
-    define('BASE_URL', $protocol . '://www.mywebsite.com/public/assets/');
-}
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$host     = $_SERVER['HTTP_HOST'];
+
+// Directory of public/index.php, e.g. /Snap_Gang_Ent/public
+$basePath = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME']));
+$basePath = rtrim($basePath, '/');
+
+define('ROOT',     $protocol . '://' . $host . $basePath);
+define('BASE_URL', $protocol . '://' . $host . $basePath . '/assets/');
 
 define('INCLUDES', __DIR__ . '/../pages/includes/');
 
