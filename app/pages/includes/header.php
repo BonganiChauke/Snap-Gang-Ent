@@ -12,7 +12,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
     <!-- custom css style file link -->
-    <link rel="stylesheet" href="<?= BASE_URL ?>css/style.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>css/style.css?344">
     <script src="<?= BASE_URL ?>js/script.js" defer></script>
 </head>
 
@@ -62,7 +62,7 @@
 
             <!-- Full background image -->
             <div class="hero-bg-img" aria-hidden="true">
-                <img src="../public/assets/images/adi-goldstein-sdtnZ4LgbWk-unsplash.jpg"
+                <img src="<?= BASE_URL ?>images/adi-goldstein-sdtnZ4LgbWk-unsplash.jpg"
                     alt="Recording studio mixing board">
             </div>
 
