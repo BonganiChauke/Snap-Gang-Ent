@@ -223,7 +223,7 @@ include INCLUDES . 'header.php';
 </section>
 
 <!-- music section -->
-<section id="#music">
+<section id="music">
 
 </section>
 
