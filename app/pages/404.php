@@ -29,7 +29,7 @@
 
         <!-- Navbar -->
         <nav class="navbar" role="navigation" aria-label="Site navigation">
-            <a href="index.html" class="navbar-brand">
+            <a href="./index.php" class="navbar-brand">
                 <span>Snap</span> Gvng Ent
             </a>
             <a href="javascript:history.back()" class="navbar-back">Go back</a>
@@ -57,13 +57,13 @@
             <div class="error-path" id="errorPath" aria-label="Requested URL"></div>
 
             <div class="error-actions">
-                <a href="index.html" class="btn-home">Back to Home</a>
+                <a href="/../pages/admin.php" class="btn-home">Back to Home</a>
                 <a href="javascript:history.back()" class="btn-back">Go Back</a>
             </div>
 
             <div class="quick-links">
                 <span class="quick-label">Try:</span>
-                <a href="index.html#about" class="quick-link">About</a>
+                <a href="index.php#about" class="quick-link">About</a>
                 <a href="index.html#artists" class="quick-link">Artists</a>
                 <a href="index.html#music" class="quick-link">Music</a>
                 <a href="index.html#contact" class="quick-link">Contact</a>
