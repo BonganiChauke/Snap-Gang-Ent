@@ -1,7 +1,7 @@
 // app/pages/index.php
 <?php
-require_once __DIR__ . '/../../app/core/config.php';
-include(INCLUDES . 'header.php');
+require_once __DIR__ . '/../core/config.php';;
+include INCLUDES . 'header.php';
 
 ?>
 
