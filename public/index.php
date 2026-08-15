@@ -25,7 +25,7 @@ $URL = explode("/", $URL);
 
 // Display the contents of the $URL array.
 // Usually used for debugging purposes.
-show($URL);
+// show($URL);
 
 // Convert the first part of the URL to lowercase
 // and pass it into the pages() function.
