@@ -1,17 +1,16 @@
 <?php 
 
 // file for functions
+// function show($stuff)
+// {
+//     echo "<pre>";
+//     print_r($stuff);
+//     echo "</pre>";
+// }
 
-
-function show($stuff){
-    echo "<prev>";
-    print_r($stuff);
-    echo "</prev>";
-}
-
-// return file function
-function pages ($file){
-    return "../app/pages/".$file.".php";
+function pages($file)
+{
+    return __DIR__ . '/../pages/' . $file . '.php';
 }
 
 ?>
