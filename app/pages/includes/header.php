@@ -70,7 +70,6 @@
             <div class="hero-bg-grid" aria-hidden="true"></div>
 
             <!-- Accent lines -->
-            <div class="hero-accent-top" aria-hidden="true"></div>
             <div class="hero-accent-left" aria-hidden="true"></div>
 
             <!-- Left-aligned content -->
