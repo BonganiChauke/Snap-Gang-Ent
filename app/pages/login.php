@@ -1,137 +1,91 @@
-<!doctype html>
-<html lang="en" data-bs-theme="light">
+<?php
+require_once __DIR__ . '/../core/config.php';
+include INCLUDES . 'header.php';
 
-<head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+?>
 
-    <!-- Bootstrap CSS v5.3.8 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+<!-- main content -->
 
-    <!-- custom css style file link -->
-    <link rel="stylesheet" href="./assets/css/style.css?344">
-</head>
+<div class="page">
+    <!-- Left brand panel -->
+    <div class="brand-panel">
 
-<body>
-    <header>
-        <!-- place navbar here -->
-         <!-- nav bar -->
-        <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="brand-content">
 
-            <a class="navbar-brand" href="#">
-                <span class="accent-red">Snap</span> Gvng <span class="accent-blue">Ent</span>
+            <!-- Logo -->
+            <a href="index.html" class="brand-logo">
+                <span>Snap</span> Gvng Ent
             </a>
 
-            <!-- Desktop nav links -->
-            <ul class="nav-links">
-                <li><a href="#hero" class="active">Home</a></li>
-                <li><a href="./index.php">About us</a></li>
-                <li><a href="#contact">Contact us</a></li>
-                <li><a href="#artists">Artists</a></li>
-                <li><a href="#music">Music</a></li>
-            </ul>
+            <!-- Headline -->
+            <div class="brand-headline">
+                <p class="brand-label">Members Portal</p>
+                <h2 class="brand-title">
+                    Welcome<br>
+                    <span class="accent-red">Back</span> to the<br>
+                    <span class="accent-blue">Family</span>
+                </h2>
+                <div class="brand-divider"></div>
+                <p class="brand-desc">
+                    Sign in to access exclusive content, artist updates,
+                    early releases, and everything the Snap Gvng Ent
+                    inner circle has to offer.
+                </p>
+            </div>
 
-            <ul class="nav-links">
-                <a href="#" class="btn-outline-blue lgn-btn">Login</a>
-            </ul>
-
-            <!-- Mobile hamburger button -->
-            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav(this)">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-        </nav>
-
-    </header>
-
-    <!-- main content -->
-    <main>
-        <div class="page">
-            <!-- Left brand panel -->
-            <div class="brand-panel">
-
-                <div class="brand-content">
-
-                    <!-- Logo -->
-                    <a href="index.html" class="brand-logo">
-                        <span>Snap</span> Gvng Ent
-                    </a>
-
-                    <!-- Headline -->
-                    <div class="brand-headline">
-                        <p class="brand-label">Members Portal</p>
-                        <h2 class="brand-title">
-                            Welcome<br>
-                            <span class="accent-red">Back</span> to the<br>
-                            <span class="accent-blue">Family</span>
-                        </h2>
-                        <div class="brand-divider"></div>
-                        <p class="brand-desc">
-                            Sign in to access exclusive content, artist updates,
-                            early releases, and everything the Snap Gvng Ent
-                            inner circle has to offer.
-                        </p>
-                    </div>
-
-                    <!-- Footer badges -->
-                    <div class="brand-footer">
-                        <div class="member-avatars">
-                            <div class="member-avatar">A</div>
-                            <div class="member-avatar">K</div>
-                            <div class="member-avatar">M</div>
-                        </div>
-                        <div class="member-text">
-                            <strong>Join 500+ members</strong>
-                            already inside
-                        </div>
-                    </div>
-
+            <!-- Footer badges -->
+            <div class="brand-footer">
+                <div class="member-avatars">
+                    <div class="member-avatar">A</div>
+                    <div class="member-avatar">K</div>
+                    <div class="member-avatar">M</div>
+                </div>
+                <div class="member-text">
+                    <strong>Join 500+ members</strong>
+                    already inside
                 </div>
             </div>
 
-            <!-- ── Right form panel ─────────────────────────────── -->
-            <div class="form-panel">
-                <div class="form-box">
+        </div>
+    </div>
 
-                    <div class="form-heading">
-                        <h1>Sign In</h1>
-                        <p>No account? <a href="#">Create one free</a></p>
-                    </div>
+    <!-- ── Right form panel ─────────────────────────────── -->
+    <div class="form-panel">
+        <div class="form-box">
 
-                    <!-- Alert banner (shown on error/success) -->
-                    <div class="form-alert" id="formAlert"></div>
+            <div class="form-heading">
+                <h1>Sign In</h1>
+                <p>No account? <a href="#">Create one free</a></p>
+            </div>
 
-                    <!-- Email -->
-                    <div class="form-group">
-                        <label for="loginEmail">Email Address</label>
-                        <div class="input-wrap">
-                            <input type="email" id="loginEmail" placeholder="you@example.com" autocomplete="email">
-                        </div>
-                        <span class="field-error" id="loginEmailError"></span>
-                    </div>
+            <!-- Alert banner (shown on error/success) -->
+            <div class="form-alert" id="formAlert"></div>
 
-                    <!-- Password -->
-                    <div class="form-group">
-                        <label for="loginPassword">
-                            Password
-                            <a href="#">Forgot password?</a>
-                        </label>
-                        <div class="input-wrap">
-                            <input type="password" id="loginPassword" placeholder="••••••••"
-                                autocomplete="current-password">
-                            <button type="button" class="pw-toggle" id="pwToggle"
-                                aria-label="Toggle password visibility">👁</button>
-                        </div>
-                        <span class="field-error" id="loginPasswordError"></span>
-                    </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label for="loginEmail">Email Address</label>
+                <div class="input-wrap">
+                    <input type="email" id="loginEmail" placeholder="you@example.com" autocomplete="email">
+                </div>
+                <span class="field-error" id="loginEmailError"></span>
+            </div>
 
-                    <!-- Remember me -->
-                    <!-- <div class="remember-row">
+            <!-- Password -->
+            <div class="form-group">
+                <label for="loginPassword">
+                    Password
+                    <a href="#">Forgot password?</a>
+                </label>
+                <div class="input-wrap">
+                    <input type="password" id="loginPassword" placeholder="••••••••" autocomplete="current-password">
+                    <button type="button" class="pw-toggle" id="pwToggle"
+                        aria-label="Toggle password visibility">👁</button>
+                </div>
+                <span class="field-error" id="loginPasswordError"></span>
+            </div>
+
+            <!-- Remember me -->
+            <!-- <div class="remember-row">
                         <div class="custom-checkbox" id="rememberBox" role="checkbox" aria-checked="false" tabindex="0">
                         </div>
                         <input type="checkbox" id="rememberInput">
@@ -139,11 +93,11 @@
                             days</label>
                     </div> -->
 
-                    <!-- Submit -->
-                    <button type="button" class="btn-login" id="loginBtn">Sign In</button>
+            <!-- Submit -->
+            <button type="button" class="btn-login" id="loginBtn">Sign In</button>
 
-                    <!-- Or divider -->
-                    <!-- <div class="or-divider"><span>or continue with</span></div>
+            <!-- Or divider -->
+            <!-- <div class="or-divider"><span>or continue with</span></div>
 
                      Social logins 
                     <div class="social-logins">
@@ -155,20 +109,11 @@
                         </a>
                     </div> -->
 
-                </div>
-            </div>
         </div>
-    </main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    </div>
+</div>
 
-    <!-- custom js  -->
-    <script src="./assets/js/script.js" defer></script>
-</body>
 
-</html>
+<?php
+include(INCLUDES . 'footer.php');
+?>
