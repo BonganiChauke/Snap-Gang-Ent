@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 // file for functions
 // function show($stuff)
