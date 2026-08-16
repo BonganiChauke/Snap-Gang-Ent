@@ -13,7 +13,6 @@
 
     <!-- custom css style file link -->
     <link rel="stylesheet" href="<?= BASE_URL ?>css/style.css?344">
-    <script src="<?= BASE_URL ?>js/script.js" defer></script>
 </head>
 
 <body>
