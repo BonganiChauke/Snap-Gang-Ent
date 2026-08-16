@@ -2,10 +2,10 @@
 
 // Starts a new session or resumes the existing session.
 // Sessions are used to store user data across different pages.
-session_start();
+// session_start();
 
 // Includes the function file from the core folder.
-require_once __DIR__ . '/../app/core/function.php';
+// require_once __DIR__ . '/../app/core/function.php';
 
 // Get the 'url' parameter from the URL using GET.
 // If no URL is provided, default to 'home'.
@@ -13,7 +13,7 @@ require_once __DIR__ . '/../app/core/function.php';
 // Example:
 // localhost/project/home/about
 // $_GET['url'] = "home/about"
-$URL = $_GET['url'] ?? 'index';
+// $URL = $_GET['url'] ?? '404';
 
 
 // Split the URL string into an array using "/" as the separator.
@@ -21,7 +21,7 @@ $URL = $_GET['url'] ?? 'index';
 // Example:
 // "home/about" becomes:
 // ["home", "about"]
-$URL = explode("/", $URL);
+// $URL = explode("/", $URL);
 
 // Display the contents of the $URL array.
 // Usually used for debugging purposes.
@@ -36,19 +36,44 @@ $URL = explode("/", $URL);
 //
 // The pages() function probably returns the path
 // to the correct page file.
-$file = pages(strtolower($URL[0]));
+// $file = pages(strtolower($URL[0]));
 
 // Check if the requested file exists.
-if (file_exists($file)) {
+// if (file_exists($file)) {
 
-    // Load the requested page file.
-    require $file;
+//     // Load the requested page file.
+//     require $file;
 
 
+// } else {
+
+//     // If the file does not exist,
+//     // load the 404 error page instead.
+//     require pages("404");
+// }
+
+
+
+session_start();
+require __DIR__ . '/../app/core/function.php';
+
+// --- Unified router for Apache + PHP built-in server ---
+if (isset($_GET['url'])) {
+    // Apache (with .htaccess)
+    $urlPath = $_GET['url'];
 } else {
+    // PHP built-in server
+    $requestUri = $_SERVER['REQUEST_URI'] ?? '/';
+    $urlPath = trim(parse_url($requestUri, PHP_URL_PATH), '/');
+    $urlPath = $urlPath ?: 'index';
+}
 
-    // If the file does not exist,
-    // load the 404 error page instead.
+$URL = explode('/', $urlPath);
+$file = pages(strtolower($URL[0]));
+
+if (file_exists($file)) {
+    require $file;
+} else {
     require pages("404");
 }
 ?>
