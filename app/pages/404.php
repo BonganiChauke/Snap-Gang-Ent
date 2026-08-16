@@ -1,3 +1,8 @@
+<?php
+require_once __DIR__ . '/../core/config.php';
+
+?>
+
 <!doctype html>
 <html lang="en" data-bs-theme="light">
 
@@ -74,9 +79,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer-page">
-        <p>&copy; 2026 <span>Snap Gvng Ent</span>. All rights reserved.</p>
-    </footer>
+    <?php
+    include(INCLUDES . 'footer.php');
+    ?>
 
     <!-- Bootstrap JavaScript Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
