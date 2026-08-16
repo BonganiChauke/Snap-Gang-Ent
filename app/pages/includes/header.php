@@ -27,11 +27,11 @@
 
             <!-- Desktop nav links -->
             <ul class="nav-links">
-                <li><a href="#hero" class="active">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#contact">Contact us</a></li>
-                <li><a href="#artists">Artists</a></li>
-                <li><a href="#music">Music</a></li>
+                <a href="<?= ROOT ?>#hero/">Home</a>
+                <a href="<?= ROOT ?>/#about">About</a>
+                <a href="<?= ROOT ?>/#artists">Artists</a>
+                <a href="<?= ROOT ?>/#music">Music</a>
+                <a href="<?= ROOT ?>/#contact">Contact</a>
             </ul>
 
             <ul class="nav-links">
@@ -49,12 +49,12 @@
 
         <!-- Mobile nav drawer -->
         <div class="mobile-nav" id="mobileNav" role="menu">
-            <a href="#hero" class="active" onclick="closeNav()">Home</a>
-            <a href="#about" onclick="closeNav()">About us</a>
-            <a href="#contact" onclick="closeNav()">Contact us</a>
-            <a href="#artists" onclick="closeNav()">Artists</a>
-            <a href="#music" onclick="closeNav()">Music</a>
-            <a href="" onclick="closeNav()">Login</a>
+            <a href="<?= ROOT ?>#hero" class="active" onclick="closeNav()">Home</a>
+            <a href="<?= ROOT ?>#about" onclick="closeNav()">About us</a>
+            <a href="<?= ROOT ?>#contact" onclick="closeNav()">Contact us</a>
+            <a href="<?= ROOT ?>#artists" onclick="closeNav()">Artists</a>
+            <a href="<?= ROOT ?>#music" onclick="closeNav()">Music</a>
+            <a href="<?= ROOT ?>/login" onclick="closeNav()">Login</a>
         </div>
 
         <!-- HERO SECTION -->

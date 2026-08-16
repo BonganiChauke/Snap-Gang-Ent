@@ -9,7 +9,7 @@
 
                 <!-- Brand column -->
                 <div class="footer-brand-col">
-                    <a href="#hero" class="footer-logo">
+                    <a href="<?= ROOT ?>#hero" class="footer-logo">
                         <span>Snap</span> Gvng Ent
                     </a>
                     <p class="footer-tagline">
@@ -29,11 +29,11 @@
                 <div class="footer-nav-col">
                     <h4>Navigate</h4>
                     <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#artists">Artists</a></li>
-                        <li><a href="#music">Music</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="<?= ROOT ?>#hero">Home</a></li>
+                        <li><a href="<?= ROOT ?>#about">About Us</a></li>
+                        <li><a href="<?= ROOT ?>#artists">Artists</a></li>
+                        <li><a href="<?= ROOT ?>#music">Music</a></li>
+                        <li><a href="<?= ROOT ?>#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -41,8 +41,8 @@
                 <div class="footer-nav-col">
                     <h4>The Label</h4>
                     <ul>
-                        <li><a href="#about">Our Story</a></li>
-                        <li><a href="#artists">Roster</a></li>
+                        <li><a href="<?= ROOT ?>#about">Our Story</a></li>
+                        <li><a href="<?= ROOT ?>#artists">Roster</a></li>
                         <li><a href="#">Press Kit</a></li>
                         <li><a href="#">Submissions</a></li>
                         <li><a href="#">Partnerships</a></li>
@@ -56,7 +56,7 @@
                         <li><a href="mailto:info@snapgvngent.com">info@snapgvngent.com</a></li>
                         <li><a href="tel:+27110000000">+27 (0) 11 000 0000</a></li>
                         <li><a href="#">Johannesburg, SA</a></li>
-                        <li><a href="#cta">Newsletter</a></li>
+                        <li><a href="<?= ROOT ?>#cta">Newsletter</a></li>
                     </ul>
                 </div>
 
@@ -72,7 +72,7 @@
                     <a href="#">Terms of Use</a>
                     <a href="#">Cookie Policy</a>
                 </nav>
-                <a href="#hero" class="footer-top-btn" aria-label="Back to top" title="Back to top">&#8593;</a>
+                <a href="#" class="footer-top-btn" aria-label="Back to top" title="Back to top">&#8593;</a>
             </div>
 
         </div>
