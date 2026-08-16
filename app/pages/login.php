@@ -5,17 +5,17 @@ include INCLUDES . 'header.php';
 ?>
 
 <!-- main content -->
-
 <div class="page">
-    <!-- Left brand panel -->
+
+    <!-- ── Left: brand panel ─────────────────────────────── -->
     <div class="brand-panel">
 
         <div class="brand-content">
 
             <!-- Logo -->
-            <a href="index.html" class="brand-logo">
+            <!-- <a href="index.html" class="brand-logo">
                 <span>Snap</span> Gvng Ent
-            </a>
+            </a> -->
 
             <!-- Headline -->
             <div class="brand-headline">
@@ -34,7 +34,7 @@ include INCLUDES . 'header.php';
             </div>
 
             <!-- Footer badges -->
-            <div class="brand-footer">
+            <!-- <div class="brand-footer">
                 <div class="member-avatars">
                     <div class="member-avatar">A</div>
                     <div class="member-avatar">K</div>
@@ -44,12 +44,12 @@ include INCLUDES . 'header.php';
                     <strong>Join 500+ members</strong>
                     already inside
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
 
-    <!-- ── Right form panel ─────────────────────────────── -->
+    <!-- ── Right: form panel ─────────────────────────────── -->
     <div class="form-panel">
         <div class="form-box">
 
@@ -86,31 +86,30 @@ include INCLUDES . 'header.php';
 
             <!-- Remember me -->
             <!-- <div class="remember-row">
-                        <div class="custom-checkbox" id="rememberBox" role="checkbox" aria-checked="false" tabindex="0">
-                        </div>
-                        <input type="checkbox" id="rememberInput">
-                        <label class="remember-label" for="rememberInput" id="rememberLabel">Remember me for 30
-                            days</label>
-                    </div> -->
+                <div class="custom-checkbox" id="rememberBox" role="checkbox" aria-checked="false" tabindex="0"></div>
+                <input type="checkbox" id="rememberInput">
+                <label class="remember-label" for="rememberInput" id="rememberLabel">Remember me for 30 days</label>
+            </div> -->
 
             <!-- Submit -->
             <button type="button" class="btn-login" id="loginBtn">Sign In</button>
 
             <!-- Or divider -->
-            <!-- <div class="or-divider"><span>or continue with</span></div>
+            <!-- <div class="or-divider"><span>or continue with</span></div> -->
 
-                     Social logins 
-                    <div class="social-logins">
-                        <a href="#" class="btn-social">
-                            <span class="icon">G</span> Google
-                        </a>
-                        <a href="#" class="btn-social">
-                            <span class="icon">f</span> Facebook
-                        </a>
-                    </div> -->
+            <!-- Social logins -->
+            <!-- <div class="social-logins">
+                <a href="#" class="btn-social">
+                    <span class="icon">G</span> Google
+                </a>
+                <a href="#" class="btn-social">
+                    <span class="icon">f</span> Facebook
+                </a>
+            </div> -->
 
         </div>
     </div>
+
 </div>
 
 
