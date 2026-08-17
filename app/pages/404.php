@@ -22,7 +22,7 @@ require_once __DIR__ . '/../core/config.php';
 
 <body>
 
-    <div class="page">
+    <div class="page_error">
 
         <!-- Background layers -->
         <div class="bg-grid" aria-hidden="true"></div>
