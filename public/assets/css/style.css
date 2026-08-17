@@ -1346,11 +1346,14 @@ body {
 .page {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
     min-height: 100vh;
 }
 
 /* ── Left panel — brand side ───────────────────────────── */
 .brand-panel {
+    grid-column: 1;
+    grid-row: 0;
     position: relative;
     background: var(--black);
     display: flex;
@@ -1532,6 +1535,8 @@ body {
 
 /* ── Right panel — login form ──────────────────────────── */
 .form-panel {
+    grid-column: 2;
+    grid-row: 0;
     background: var(--surface);
     display: flex;
     align-items: center;
@@ -1870,7 +1875,7 @@ body {
 }
 
 /* ── 404 styling page ─────────────────────────────────── */
-.page {
+.page_error {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -2179,6 +2184,8 @@ body {
     border-color: rgba(255, 255, 255, 0.12);
     background: rgba(255, 255, 255, 0.05);
 }
+
+
 
 /* ── Animations ─────────────────────────────────────────── */
 @keyframes fadeDown {
@@ -3267,6 +3274,21 @@ body {
     .content {
         padding: 20px 16px;
     }
+
+    /* login page styling */
+    .page {
+        grid-template-columns: 1fr;
+    }
+
+    .brand-panel {
+        grid-column: 1;
+        min-height: 45vh;
+    }
+
+    .form-panel {
+        grid-column: 1;
+        min-height: 55vh;
+    }
 }
 
 /* 820 px device */
@@ -3278,7 +3300,6 @@ body {
     }
 
     .page {
-        grid-template-columns: 1fr;
         min-height: 100vh;
     }
 
