@@ -38,7 +38,7 @@
             </ul>
 
             <!-- Mobile hamburger button -->
-            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav(this)">
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
