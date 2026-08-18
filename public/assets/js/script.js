@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const overlay = document.getElementById('sidebarOverlay');
     const hamburger = document.getElementById('hamburgerBtn');
 
-    hamburger.addEventListener('click', function () {
+    hamburger?.addEventListener('click', function () {
         sidebar.classList.toggle('open');
         overlay.classList.toggle('open');
     });
