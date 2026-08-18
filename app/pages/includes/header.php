@@ -26,7 +26,7 @@
 
             <!-- Desktop nav links -->
             <ul class="nav-links">
-                <a href="<?= ROOT ?>#hero/">Home</a>
+                <a href="<?= ROOT ?>#hero">Home</a>
                 <a href="<?= ROOT ?>/#about">About</a>
                 <a href="<?= ROOT ?>/#artists">Artists</a>
                 <a href="<?= ROOT ?>/#music">Music</a>
