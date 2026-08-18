@@ -48,19 +48,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav a');
 
-    window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', function () {
         let current = '';
-        sections.forEach(section => {
+        sections.forEach(function (section) {
             if (window.scrollY >= section.offsetTop - 80) {
                 current = section.getAttribute('id');
             }
         });
-        navLinks.forEach(link => {
+        navLinks.forEach(function (link) {
             link.classList.remove('active');
             if (link.getAttribute('href') === '#' + current) {
                 link.classList.add('active');
             }
         });
+
     });
 
     /* Validation helpers  */
