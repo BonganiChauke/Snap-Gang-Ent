@@ -64,7 +64,7 @@ body {
 }
 
 /* navbar  */
-.navbar {
+.site-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -77,9 +77,10 @@ body {
     justify-content: space-between;
     padding: 0 2rem;
     height: 60px;
+    position: relative;
 }
 
-.navbar-brand {
+.site-nav .navbar-brand {
     font-family: var(--font-brand);
     font-size: 22px;
     font-weight: normal;
