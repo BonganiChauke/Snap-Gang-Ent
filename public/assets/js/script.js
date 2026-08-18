@@ -1,3 +1,45 @@
+// dom loaded for menu nav
+document.addEventListener('DOMContentLoaded', () => {
+
+    const hamburger = document.querySelector('.hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+
+    if (!hamburger || !mobileNav) {
+        return;
+    }
+
+    hamburger.addEventListener('click', () => {
+
+        hamburger.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+
+        const isOpen = mobileNav.classList.contains('active');
+
+        hamburger.setAttribute(
+            'aria-expanded',
+            isOpen ? 'true' : 'false'
+        );
+    });
+
+    // Close menu when a mobile link is clicked
+    mobileNav.querySelectorAll('a').forEach(link => {
+
+        link.addEventListener('click', () => {
+
+            hamburger.classList.remove('active');
+            mobileNav.classList.remove('active');
+
+            hamburger.setAttribute(
+                'aria-expanded',
+                'false'
+            );
+        });
+
+    });
+
+});
+
+
 // All event listeners are registered inside DOMContentLoaded
 // so elements are guaranteed to exist before any handler runs
 document.addEventListener('DOMContentLoaded', function () {
