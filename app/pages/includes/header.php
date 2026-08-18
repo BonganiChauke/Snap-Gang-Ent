@@ -48,12 +48,12 @@
 
         <!-- Mobile nav drawer -->
         <div class="mobile-nav" id="mobileNav" role="menu">
-            <a href="<?= ROOT ?>#hero" class="active" onclick="closeNav()">Home</a>
-            <a href="<?= ROOT ?>#about" onclick="closeNav()">About us</a>
-            <a href="<?= ROOT ?>#contact" onclick="closeNav()">Contact us</a>
-            <a href="<?= ROOT ?>#artists" onclick="closeNav()">Artists</a>
-            <a href="<?= ROOT ?>#music" onclick="closeNav()">Music</a>
-            <a href="<?= ROOT ?>/login" onclick="closeNav()">Login</a>
+            <a href="<?= ROOT ?>#hero" class="active">Home</a>
+            <a href="<?= ROOT ?>#about">About us</a>
+            <a href="<?= ROOT ?>#contact">Contact us</a>
+            <a href="<?= ROOT ?>#artists">Artists</a>
+            <a href="<?= ROOT ?>#music">Music</a>
+            <a href="<?= ROOT ?>/login">Login</a>
         </div>
 
         <!-- HERO SECTION -->
