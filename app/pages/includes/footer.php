@@ -72,7 +72,7 @@
                     <a href="#">Terms of Use</a>
                     <a href="#">Cookie Policy</a>
                 </nav>
-                <a href="#" class="footer-top-btn" aria-label="Back to top" title="Back to top">&#8593;</a>
+                <a href="#hero" class="footer-top-btn" aria-label="Back to top" title="Back to top">&#8593;</a>
             </div>
 
         </div>
