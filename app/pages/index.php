@@ -156,14 +156,14 @@ include INCLUDES . 'header.php';
                     <div class="form-group">
                         <label for="firstName">First Name </label>
                         <input type="text" id="firstName" name="firstName" placeholder="John"
-                            onblur="validateName('firstName')" oninput="clearError('firstName')" required>
+                             required>
                         <span class="helper-text" id="firstName-helper"></span>
                         <span class="error-text" id="firstName-error"></span>
                     </div>
                     <div class="form-group">
                         <label for="lastName">Last Name </label>
                         <input type="text" id="lastName" name="lastName" placeholder="Doe"
-                            onblur="validateName('lastName')" oninput="clearError('lastName')" required>
+                             required>
                         <span class="helper-text" id="lastName-helper"></span>
                         <span class="error-text" id="lastName-error"></span>
                     </div>
@@ -174,14 +174,14 @@ include INCLUDES . 'header.php';
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="john@example.com"
-                            onblur="validateEmail()" oninput="clearError('email')" required>
+                              required>
                         <span class="helper-text" id="email-helper"></span>
                         <span class="error-text" id="email-error"></span>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+27 00 000 0000" onblur="validatePhone()"
-                            oninput="clearError('phone')">
+                        <input type="tel" id="phone" name="phone" placeholder="+27 00 000 0000"
+                            >
                         <span class="helper-text" id="phone-helper"></span>
                         <span class="error-text" id="phone-error"></span>
                     </div>
@@ -194,7 +194,7 @@ include INCLUDES . 'header.php';
                     </label>
                     <textarea id="message" name="message"
                         placeholder="Tell us about yourself, your project, or how we can help..."
-                        onblur="validateMessage()" oninput="onMessageInput()" maxlength="250" required></textarea>
+                          maxlength="250" required></textarea>
                     <span class="helper-text" id="message-helper"></span>
                     <span class="error-text" id="message-error"></span>
                 </div>
