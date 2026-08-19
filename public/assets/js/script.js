@@ -228,14 +228,20 @@ document.addEventListener('DOMContentLoaded', function () {
         clearError('message');
     }
 
-    // submit function 
-    function handleSubmit() {
+    // submit form event listener
+    document.getElementById('submit_btn').addEventListener('click', (e) => {
+
+        // prevent default
+        e.preventDefault();
+
+        //const variables
         const validate_names = validateName('firstName');
         const validate_last_names = validateName('lastName');
         const validate_email = validateEmail();
         const validate_phones = validatePhone();
         const validate_messages = validateMessage();
 
+        // to check if inputs are valid
         if (!validate_names || !validate_last_names || !validate_email || !validate_phones || !validate_messages) {
             // Scroll to first invalid field
             const firstInvalid = document.querySelector('.form-group input.invalid, .form-group textarea.invalid');
@@ -265,11 +271,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (successEl) {
-            successEl.style.display = 'block';
-            successEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            document.getElementById('contactForm').reset();
+
+            // time out function to remove message after few seconds
+            setTimeout(() => {
+                successEl.style.display = 'block';
+                successEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                document.getElementById('contactForm').reset();
+            }, 5000)
+
         }
-    }
+
+    });
+
 
     /* ------------ Login form ------------------------------ */
 
