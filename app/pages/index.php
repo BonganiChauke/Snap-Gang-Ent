@@ -200,7 +200,7 @@ include INCLUDES . 'header.php';
                 </div>
 
                 <!-- submit button  -->
-                <button type="button" class="form-submit">Send Message</button>
+                <button type="button" id="submit_btn" class="form-submit">Send Message</button>
 
                 <div class="form-success" id="formSuccess">
                     ✓ &nbsp; Message sent! We'll be in touch within 24–48 hours.
