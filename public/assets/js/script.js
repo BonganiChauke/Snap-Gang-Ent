@@ -378,34 +378,49 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })();
 
-    /* Admin Sidebar toggle (mobile)  */
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('sidebarOverlay');
-    const hamburger = document.getElementById('hamburgerBtn');
+    /* Dashboard Sidebar toggle (mobile) - dashboard pages (admin, producer, artist)  */
+    const sidebarEl = document.getElementById('sidebar');
+    const overlayEl = document.getElementById('sidebarOverlay');
+    const hamburgerEl = document.getElementById('hamburgerBtn');
 
-    hamburger?.addEventListener('click', function () {
-        sidebar.classList.toggle('open');
-        overlay.classList.toggle('open');
-    });
+    if (sidebarEl && hamburgerEl) {
 
-    function closeSidebar() {
-        sidebar.classList.remove('open');
-        overlay.classList.remove('open');
-    }
-
-    window.closeSidebar = closeSidebar;
-
-    /* Active nav item */
-    window.setActive = function (btn, label) {
-        document.querySelectorAll('.nav-item').forEach(function (el) {
-            el.classList.remove('active');
+        /* Open / close on hamburger click */
+        hamburgerEl.addEventListener('click', function () {
+            const isOpen = sidebarEl.classList.toggle('open');
+            overlayEl && overlayEl.classList.toggle('open', isOpen);
+            hamburgerEl.setAttribute('aria-expanded', isOpen);
         });
-        btn.classList.add('active');
-        document.getElementById('topbarTitle').textContent = label;
 
-        // Close sidebar on mobile after selecting
-        if (window.innerWidth <= 768) closeSidebar();
-    };
+        /* Close when overlay (dimmed background) is clicked */
+        if (overlayEl) {
+            overlayEl.addEventListener('click', function () {
+                sidebarEl.classList.remove('open');
+                overlayEl.classList.remove('open');
+                hamburgerEl.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        /* Close when a sidebar nav link is clicked (mobile) */
+        sidebarEl.querySelectorAll('.nav-item').forEach(function (item) {
+            item.addEventListener('click', function () {
+                if (window.innerWidth <= 768) {
+                    sidebarEl.classList.remove('open');
+                    overlayEl && overlayEl.classList.remove('open');
+                    hamburgerEl.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+        /* Close on Escape key */
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && sidebarEl.classList.contains('open')) {
+                sidebarEl.classList.remove('open');
+                overlayEl && overlayEl.classList.remove('open');
+                hamburgerEl.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
 
     /* ── Logout  */
     window.handleLogout = function () {
