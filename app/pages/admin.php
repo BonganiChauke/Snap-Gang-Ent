@@ -6,7 +6,16 @@ include(INCLUDES . 'head.php');
 ?>
 
 
+<div class="shell">
+    <?php include(INCLUDES . 'sidebar_admin.php'); ?>
+    <div class="main">
+        <?php include(INCLUDES . 'topbar.php'); ?>
+        <main class="content">
 
+            <!-- page-specific content here -->
+        
+    </div>
+</div>
 
 
 
