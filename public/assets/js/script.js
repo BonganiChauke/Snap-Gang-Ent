@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // submit form event listener
-    document.getElementById('submit_btn').addEventListener('click', (e) => {
+    document.getElementById('submit_btn')?.addEventListener('click', (e) => {
 
         // prevent default
         e.preventDefault();
