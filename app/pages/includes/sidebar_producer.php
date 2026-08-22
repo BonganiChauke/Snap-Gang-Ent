@@ -23,7 +23,7 @@
         <?php navItem('Profile', ROOT . '/profile', 'profile', $active); ?>
     </nav>
     <div class="sidebar-footer">
-        <a href="<?= ROOT ?>/logout" class="nav-item logout">
+        <a id="logout" class="nav-item logout">
             <span class="nav-icon">⏻</span> Logout
         </a>
     </div>
