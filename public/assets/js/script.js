@@ -426,7 +426,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         if (confirm('Are you sure you want to log out?')) {
-            window.location.href = '../../../app/pages/login.php';
+            window.location.href = ROOT + '/login';
+            window.history.forward();
         }
 
 
