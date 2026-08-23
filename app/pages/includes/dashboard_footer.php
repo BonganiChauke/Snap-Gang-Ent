@@ -7,8 +7,13 @@
 
 <!-- Bootstrap JavaScript Bundle (includes Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+
+<!-- declaring root variable to use for navigation -->
+<script>
+    const ROOT = <?= json_encode(ROOT) ?>;
+</script>
 
 <!-- custom js  -->
 <script src="<?= ROOT ?>/assets/js/script.js" defer></script>
