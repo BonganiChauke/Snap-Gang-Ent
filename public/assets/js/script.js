@@ -416,12 +416,21 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    /* ── Logout  */
-    window.handleLogout = function () {
+    /* ── Logout dashboard function */
+    document.getElementById('logout')?.addEventListener('click', () => {
+
+        window.history.pushState(null, "", window.location.href);
+
+        window.addEventListener("popstate", function () {
+            window.history.pushState(null, "", window.location.href);
+        });
+
         if (confirm('Are you sure you want to log out?')) {
             window.location.href = '../../../app/pages/login.php';
         }
-    };
+
+
+    });
 
     /* ── Animate bars on load ──────────────────────────── */
     // Bars start at 0 width via inline style and transition to final value
