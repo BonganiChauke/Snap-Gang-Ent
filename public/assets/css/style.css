@@ -3146,6 +3146,375 @@ body {
     color: var(--red);
 }
 
+/* ── Producer ─────────────────────────────────────────────── */
+/* Alert banner */
+.producer-alert {
+    display: none;
+    padding: 13px 18px;
+    border-radius: 4px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+}
+
+.producer-alert.error {
+    background: rgba(204, 0, 0, 0.1);
+    border: 1px solid rgba(204, 0, 0, 0.25);
+    color: #ff6666;
+}
+
+.producer-alert.success {
+    background: rgba(26, 107, 212, 0.1);
+    border: 1px solid rgba(26, 107, 212, 0.25);
+    color: var(--blue-soft);
+}
+
+/* ── Two column layout ───────────────────────────────── */
+.producer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* ── Panel card ──────────────────────────────────────── */
+.content {
+    flex: 1;
+    padding: 32px;
+}
+
+.panel-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.panel-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel-header h3 {
+    font-family: var(--font-brand);
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.panel-header-badge {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red);
+    background: var(--red-soft);
+    border: 1px solid var(--red-border);
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+.panel-body {
+    padding: 24px;
+}
+
+/* ── Upload area ─────────────────────────────────────── */
+.upload-area {
+    border: 2px dashed var(--border);
+    border-radius: 6px;
+    padding: 36px 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.upload-area:hover,
+.upload-area.drag-over {
+    border-color: var(--red);
+    background: var(--red-soft);
+}
+
+
+.upload-icon {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.upload-text {
+    font-size: 14px;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+
+.upload-sub {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+
+.upload-browse {
+    color: var(--red);
+}
+
+.upload-formats {
+    font-size: 10px;
+    color: var(--dim);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* File selected preview */
+.upload-preview {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.upload-preview-info {
+    flex: 1;
+    text-align: left;
+}
+
+.upload-preview-info strong {
+    display: block;
+    font-size: 13px;
+    color: var(--white);
+    margin-bottom: 3px;
+    word-break: break-all;
+}
+
+.upload-preview-info span {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.upload-remove {
+    background: rgba(204, 0, 0, 0.15);
+    border: 1px solid var(--red-border);
+    color: var(--red);
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s;
+}
+
+.upload-remove:hover {
+    background: rgba(204, 0, 0, 0.3);
+}
+
+/* ── Form fields ─────────────────────────────────────── */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--dim);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.required-star {
+    color: var(--red);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 11px 14px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--white);
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+    width: 100%;
+}
+
+.form-group select option {
+    background: #1a1a1a;
+    color: var(--white);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #2a2a2a;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--red);
+    background: rgba(204, 0, 0, 0.04);
+}
+
+.form-group input.invalid,
+.form-group select.invalid {
+    border-color: #cc3333;
+    background: rgba(204, 0, 0, 0.05);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Submit button */
+.btn-upload {
+    width: 100%;
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 13px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: background 0.2s;
+    margin-top: 4px;
+}
+
+.btn-upload:hover {
+    background: var(--red-dark);
+}
+
+.btn-upload:disabled {
+    background: #1a6bd4;
+    cursor: default;
+}
+
+/* ── Uploaded beats table ────────────────────────────── */
+.full-width {
+    grid-column: 1 / -1;
+    margin-top: 8px;
+}
+
+.beats-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.beats-table th {
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--dim);
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.beats-table td {
+    padding: 12px 20px;
+    font-size: 13px;
+    color: var(--muted);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    vertical-align: middle;
+}
+
+.beats-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.beats-table tbody tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.track-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.track-thumb {
+    width: 34px;
+    height: 34px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.track-thumb.red {
+    background: rgba(204, 0, 0, 0.2);
+}
+
+.track-thumb.blue {
+    background: rgba(26, 107, 212, 0.2);
+}
+
+.track-name {
+    font-size: 13px;
+    color: var(--white);
+    margin-bottom: 2px;
+}
+
+.track-artist {
+    font-size: 11px;
+    color: var(--dim);
+}
+
+.track-status {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 10px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.track-status.pending {
+    background: rgba(200, 150, 0, 0.15);
+    color: #ccaa44;
+}
+
+.track-status.approved {
+    background: rgba(30, 120, 30, 0.15);
+    color: #5aaa5a;
+}
+
+.tbl-del-btn {
+    background: rgba(204, 0, 0, 0.1);
+    border: 1px solid var(--red-border);
+    color: #884444;
+    width: 26px;
+    height: 26px;
+    border-radius: 3px;
+    font-size: 11px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.tbl-del-btn:hover {
+    background: rgba(204, 0, 0, 0.25);
+    color: var(--red);
+}
+
 /* responsiveness design */
 /* 480 px device */
 @media (max-width: 480px) {
@@ -3185,7 +3554,7 @@ body {
         gap: 32px;
     }
 
-    .footer-top .footer-nav-col{
+    .footer-top .footer-nav-col {
         margin-top: 2rem;
     }
 
@@ -3236,14 +3605,14 @@ body {
             visibility 0.3s ease;
     }
 
-     /* Open menu */
+    /* Open menu */
     .mobile-nav.active {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
     }
 
-     /* Mobile links */
+    /* Mobile links */
     .mobile-nav a {
         display: block;
         width: 100%;
@@ -3259,7 +3628,7 @@ body {
         color: var(--accent-blue);
     }
 
-     /* Animate hamburger into X */
+    /* Animate hamburger into X */
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(6px, 6px);
     }
@@ -3365,6 +3734,19 @@ body {
 
     .sidebar-overlay.open {
         display: block;
+    }
+
+    /* producer page */
+    .content {
+        padding: 20px 16px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .main {
+        margin-left: 0;
     }
 }
 
@@ -3475,6 +3857,15 @@ body {
 
     .footer-inner {
         padding: 0 2rem;
+    }
+
+    /* producer page */
+    .producer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: 1;
     }
 
 
