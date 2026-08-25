@@ -3148,6 +3148,10 @@ body {
 
 /* ── Producer ─────────────────────────────────────────────── */
 /* Alert banner */
+.content {
+    padding: 28px 32px;
+}
+
 .producer-alert {
     display: none;
     padding: 13px 18px;
@@ -3408,6 +3412,25 @@ body {
 }
 
 /* ── Uploaded beats table ────────────────────────────── */
+/* Upload area — make border visible */
+.upload-area {
+    border: 2px dashed rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    padding: 48px 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    margin-bottom: 24px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.upload-area:hover,
+.upload-area.drag-over {
+    border-color: var(--red);
+    background: var(--red-soft);
+}
+
+
 .full-width {
     grid-column: 1 / -1;
     margin-top: 8px;
