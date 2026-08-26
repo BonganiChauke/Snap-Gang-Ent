@@ -1,5 +1,4 @@
-</main>
-</div><!-- /shell -->
+
 
 <footer class="dash-footer" id="siteFooter">
     <p>&copy; <?= date('Y') ?> <span>Snap Gvng Ent</span>. All rights reserved. <?= $pageFooter ?> Panel. </p>
