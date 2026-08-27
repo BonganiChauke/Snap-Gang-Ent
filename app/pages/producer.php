@@ -11,7 +11,13 @@ include(INCLUDES . 'head.php');
     <?php include(INCLUDES . 'sidebar_producer.php'); ?>
     <div class="main">
         <?php include(INCLUDES . 'topbar.php'); ?>
-        <main class="content">
+        <div class="content">
+
+            <div class="page-header">
+                <span class="page-label">Producer Portal</span>
+                <h1 class="page-title">Upload a Beat</h1>
+                <p class="page-subtitle">Upload your production and assign it to an artist on the roster.</p>
+            </div>
 
             <!-- producer upload form here -->
             <!-- Alert -->
@@ -191,7 +197,7 @@ include(INCLUDES . 'head.php');
                 </div>
             </form>
 
-        </main>
+        </div>
 
     </div>
 </div>
