@@ -16,9 +16,8 @@
     <nav class="sidebar-nav">
         <span class="nav-section-label">Main</span>
         <?php navItem('Dashboard', ROOT . '/producer', 'home', $active); ?>
-        <?php navItem('Upload Beat', ROOT . '/producer/upload', 'upload', $active); ?>
-        <?php navItem('My Beats', ROOT . '/producer/beats', 'beats', $active); ?>
-        <?php navItem('Artists', ROOT . '/producer/artists', 'artists', $active); ?>
+        <?php navItem('My Beats', ROOT . '/beats', 'beats', $active); ?>
+        <?php navItem('Artists', ROOT . '/artists', 'artists', $active); ?>
         <span class="nav-section-label">Account</span>
         <?php navItem('Profile', ROOT . '/profile', 'profile', $active); ?>
     </nav>
