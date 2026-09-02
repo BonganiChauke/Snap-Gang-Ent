@@ -17,8 +17,6 @@
     <nav class="sidebar-nav">
         <span class="nav-section-label">Main</span>
         <?php navItem('Dashboard', ROOT . '/artist', 'home', $active); ?>
-        <?php navItem('My Beats', ROOT . '/artist/beats', 'beats',   $active); ?>
-        <?php navItem('Releases', ROOT . '/artist/releases','releases',$active); ?>
         <span class="nav-section-label">Account</span>
         <?php navItem('Profile', ROOT . '/profile', 'profile', $active); ?>
     </nav>
